@@ -1,17 +1,44 @@
-const { MongoClient } = require("mongodb");
+// Arquivo: connection.js
 
+const { MongoClient } = require("mongodb");
 const uri = "mongodb://localhost:27017/ecommerce";
 
+let dbInstance = null;
+let clientInstance = null; 
+
 const connectDB = async () => {
-  try {
-    const client = new MongoClient(uri);
-    await client.connect();
-    console.log("Conectado ao banco");
-    const db =  client.db(); 
-    return db
-  } catch (err) {
-    console.error("Erro ao se conectar ao banco", err);
-  }
+    if (dbInstance) {
+        return dbInstance;
+    }
+
+    try {
+        clientInstance = new MongoClient(uri);
+        await clientInstance.connect();
+        dbInstance = clientInstance.db();
+        console.log("Conectado ao banco e instância armazenada.");
+        
+        process.on("SIGINT", async () => {
+            await disconnectDB();
+            process.exit(0);
+        });
+
+        return dbInstance;
+    } catch (err) {
+        console.error("Erro ao se conectar ao banco:", err);
+        throw err;
+    }
 };
 
-module.exports = connectDB;
+const disconnectDB = async () => {
+    if (clientInstance) {
+        await clientInstance.close();
+        dbInstance = null;
+        clientInstance = null;
+        console.log("Conexão com o banco fechada explicitamente.");
+    }
+};
+
+module.exports = {
+    connectDB,
+    disconnectDB,
+};
