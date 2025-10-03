@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "mongodb": "^6.20.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backend-ec48b/projeto-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/backend-ec48b/projeto-backend/issues"
+  },
+  "homepage": "https://github.com/backend-ec48b/projeto-backend#readme"
 }
