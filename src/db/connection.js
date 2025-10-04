@@ -1,17 +1,18 @@
 const { MongoClient } = require("mongodb");
 
-const uri = "mongodb://localhost:27017/ecommerce";
+const url = "mongodb://localhost:27017/ecommerce";
+const dbName = "ecommerce";
 
-const connectDB = async () => {
-  try {
-    const client = new MongoClient(uri);
+async function connect() {
+  try{
+    const client = new MongoClient(url);
     await client.connect();
-    console.log("Conectado ao banco");
-    const db =  client.db(); 
-    return db
+    const db = client.db(dbName);
+    return { db, client };
   } catch (err) {
-    console.error("Erro ao se conectar ao banco", err);
-  }
-};
+    console.error("Erro ao conectar ao MongoDB:", err);
+    throw err;
+  } 
+}
 
-module.exports = connectDB;
+module.exports = connect;

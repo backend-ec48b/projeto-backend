@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/backend-ec48b/projeto-backend/issues"
   },
-  "homepage": "https://github.com/backend-ec48b/projeto-backend#readme"
+  "homepage": "https://github.com/backend-ec48b/projeto-backend#readme",
+  "devDependencies": {}
 }
