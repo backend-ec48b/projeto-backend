@@ -12,7 +12,7 @@ class Cliente {
     }; 
   }
 
-  async inserir() {
+  async inserirCliente() {
     try {
         if (!this._id || this._id.length !== 11) {
           throw new Error();
@@ -41,7 +41,7 @@ class Cliente {
     }
   }
 
-  static async buscarTodos() {
+  static async buscarCliente() {
     try {
         const { db, client } = await connect();
         const result = await db.collection("clientes").find().toArray();
@@ -71,7 +71,7 @@ class Cliente {
     }
   }
 
-  static async atualizar(cpf, dados) {
+  static async atualizarCliente(cpf, dados) {
     try {
         const { db, client } = await connect();
         const collection = db.collection("clientes");
@@ -92,7 +92,7 @@ class Cliente {
     }
   }
 
-  static async deletar(cpf) {
+  static async deletarCliente(cpf) {
     try {
         const { db, client } = await connect();
         const collection = db.collection("clientes");

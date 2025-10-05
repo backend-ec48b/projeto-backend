@@ -1,17 +1,26 @@
 const connect = require("../db/connection");
 
 class Pedido {
-    constructor(notaFiscal, clienteCpf, produtosNome) {
-      this._id = notaFiscal;           
-      this.clienteCpf = clienteCpf;    
-      this.produtosNome = produtosNome;        
-      this.data = new Date();          
-    }
+  constructor(notaFiscal, clienteCpf, produtosNome) {
+    this._id = notaFiscal;           
+    this.clienteCpf = clienteCpf;    
+    this.produtosNome = produtosNome;        
+    this.data = new Date();          
+  }
 
   async inserirPedido() {
     try {
+      if (!this._id) {
+        throw new Error();
+      }
+
       const { db, client } = await connect();
       const collection = db.collection("pedidos");
+
+      const existente = await collection.findOne({ _id: this._id });
+      if (existente) {
+        throw new Error();
+      }
 
       await collection.insertOne({
         _id: this._id,
@@ -23,7 +32,7 @@ class Pedido {
       console.log("Pedido inserido com sucesso");
       client.close();
     } catch (err) {
-      console.error("Erro ao inserir pedido", err);
+      console.error("Erro ao inserir pedido");
     }
   }
 
@@ -34,7 +43,7 @@ class Pedido {
       client.close();
       return result;
     } catch (err) {
-      console.error("Erro ao buscar pedidos", err);
+      console.error("Erro ao buscar pedidos");
     }
   }
 
@@ -43,16 +52,21 @@ class Pedido {
       const { db, client } = await connect();
       const collection = db.collection("pedidos");
 
+      const existente = await collection.findOne({ _id: notaFiscal });
+      if (!existente) {
+        throw new Error();
+      }
+
       const result = await collection.updateOne(
         { _id: notaFiscal },
         { $set: dados }
       );
 
       client.close();
-      console.log("Pedido atualizado", result);
+      console.log("Pedido atualizado");
       return result;
     } catch (err) {
-      console.error("Erro ao atualizar pedido", err);
+      console.error("Erro ao atualizar pedido");
     }
   }
 
@@ -62,12 +76,15 @@ class Pedido {
       const collection = db.collection("pedidos");
 
       const result = await collection.deleteOne({ _id: notaFiscal });
-      client.close();
-      console.log("Pedido deletado", result);
+      if (result.deletedCount === 0) {
+        throw new Error();
+      }
 
+      client.close();
+      console.log("Pedido deletado");
       return result;
     } catch (err) {
-      console.error("Erro ao deletar pedido", err);
+      console.error("Erro ao deletar pedido");
     }
   }
 }

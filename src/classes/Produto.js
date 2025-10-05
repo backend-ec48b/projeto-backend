@@ -17,7 +17,7 @@ class Produto{
             console.log("Produto inserido com sucesso");
             client.close();
         }catch(error){
-            console.error("Erro ao inserir produto", err);
+            console.error("Erro ao inserir produto");
         }
     }
 
@@ -28,7 +28,7 @@ class Produto{
             client.close();
             return result;
         } catch (err) {
-            console.error("Erro ao buscar produtos", err);
+            console.error("Erro ao buscar produtos");
         }
     }
 
@@ -40,33 +40,37 @@ class Produto{
             const result = await collection.updateOne(
                 { nome: nome },
                 { $set: dados }
-            );  
+            ); 
+            
+            if(result.modifiedCount === 0){
+                throw new Error();
+            }
 
             client.close();
-            console.log("Produto atualizado:", result);
+            console.log("Produto atualizado");
             return result;
 
         } catch (err) {
-            console.error("Erro ao atualizar produto", err);
+            console.error("Erro ao atualizar produto");
         }  
     } 
     
-    static async deletar(nome) {
+    static async deletarProdutos(nome) {
         try {
             const { db, client } = await connect();
             const collection = db.collection("produtos");
 
             const result = await collection.deleteOne({ nome: nome });
-            if(!nome){
-                console.log("Produto não encontrado");
-                return
-            }
-            client.close();
-            console.log("Produto deletado:", result);
 
+            if(result.deletedCount === 0){
+                throw new Error();
+            }
+
+            client.close();
+            console.log("Produto deletado");
             return result;
         } catch (err) {
-            console.error("Erro ao deletar produto", err);
+            console.error("Erro ao deletar produto");
         }
     }
 }
