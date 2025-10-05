@@ -105,25 +105,25 @@ async function deletarPedido(notaFiscal) {
 
 //TESTE CRUD DE CLIENTES
 
-//inserirCliente();
-//buscarTodosClientes();
-//buscarClientePorCpf("12345678910");
-//atualizarCliente("12345678910", { email: "fulanodasilvateste@email.com" });
-//deletarPorCpf("12345678910");
+// inserirCliente();
+// buscarTodosClientes();
+// buscarClientePorCpf("12345678910");
+// atualizarCliente("12345678910", { email: "fulanodasilvateste@email.com" });
+// deletarPorCpf("12345678910");
 
 
 //TESTE CRUD DE PRODUTOS
 
-//inserirProdutos();
-//buscarTodosProdutos();
-//atualizarProduto("Computador Gamer", { preco: 4000.0 });
-//deletarProduto("Computador Gamer");
+// inserirProdutos();
+// buscarTodosProdutos();
+// atualizarProduto("Computador Gamer", { preco: 4000.0 });
+// deletarProduto("Computador Gamer");
 
 
 //TESTE CRUD DE PEDIDOS
 
-//inserirPedido();
-//buscarTodosPedidos();
-//atualizarPedido("NF-4436524323", { produtos: ["Computador Gamer"] });
-//deletarPedido("NF-4436524323");
+// inserirPedido();
+// buscarTodosPedidos();
+// atualizarPedido("NF-4436524323", { produtos: ["Computador Gamer"] });
+// deletarPedido("NF-4436524323");
 
