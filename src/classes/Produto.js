@@ -59,7 +59,7 @@ class Produto{
             const result = await collection.deleteOne({ nome: nome });
             if(!nome){
                 console.log("Produto não encontrado");
-                return;
+                return
             }
             client.close();
             console.log("Produto deletado:", result);

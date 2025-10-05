@@ -1,37 +1,41 @@
 const Cliente = require("./classes/Cliente");
 const Produto = require("./classes/Produto");
-const Pedido = require("./classes/Pedido")
-const connect = require("./db/connection");
+const Pedido = require("./classes/Pedido");
 
 
 //CLIENTES
 async function inserirCliente() {
   const cliente = new Cliente(
-    "03245618332",
-    "Julius Diddy",
-    "juliusdiddy@email.com", {
-        cidade: "Leopolis",
-        rua: "Rua Brasil",
-        logradouro: 467
+    "12345678910",
+    "Isadora Costa",
+    "isadoracosta@email.com", {
+        cidade: "Porto Alegre",
+        rua: "Rua Alagoas",
+        logradouro: 445
     }
   
   );
-
   await cliente.inserir();
-
-  const clientes = await Cliente.buscarTodos();
-  console.log("Clientes cadastrados no banco:", clientes);
 }
 
 async function buscarClientePorCpf(cpf) {
     const cliente = await Cliente.buscarPorCpf(cpf);
+
+    if(!cliente){
+        return;
+    }
+
     console.log("Cliente encontrado:", cliente);
 }
 
 async function atualizarCliente(cpf, dados) {
-    const resultado = await Cliente.atualizar(cpf, dados);
-    console.log("Cliente atualizado:", resultado);
+    await Cliente.atualizar(cpf, dados);
     const atualizado = await Cliente.buscarPorCpf(cpf);
+
+    if(!atualizado){
+        return;
+    }
+
     console.log("Dados atualizados do cliente:", atualizado);
 }
 
@@ -41,19 +45,15 @@ async function buscarTodosClientes() {
 }
 
 async function deletarPorCpf(cpf) {
-    const result = await Cliente.deletar(cpf);
-    console.log("Cliente deletado:", result);
+    await Cliente.deletar(cpf);
     const clientesRestantes = await Cliente.buscarTodos();
     console.log("Clientes restantes no banco:", clientesRestantes);
 }
 
 
-
-
 //PRODUTOS
-
 async function inserirProdutos() {
-    const produto = new Produto("IPad", 2999.99);
+    const produto = new Produto("Fogão", 1500.0);
     await produto.inserirProdutos();
 
     const produtos = await Produto.buscarTodosProdutos();
@@ -80,39 +80,66 @@ async function buscarTodosProdutos() {
 }
 
 
-//INSERIR PEDIDO
+//PEDIDOS
 async function inserirPedido() {
-    const pedido = new Pedido(
-        123456, 
-        "03245618332", 
-        [
-            { nome: "iPhone" },
-            { nome: "MacBook Pro" }
-        ]
-    );
+  const produtos = await Produto.buscarTodosProdutos();
+  const pedido = new Pedido(
+    "NF-4436347223",
+    "11502972980",
+    ["Fogão", "Geladeira"] 
+  );
 
     await pedido.inserirPedido();
-
     const pedidos = await Pedido.buscarPedidos();
     console.log("Pedidos cadastrados no banco:", pedidos);
 }
 
-buscarTodosProdutos();
+async function atualizarPedido(notaFiscal, dados) {
+    const resultado = await Pedido.atualizarPedido(notaFiscal, dados);
+    console.log("Pedido atualizado:", resultado);
+    const atualizado = await Pedido.buscarPedidos();
+    console.log("Dados atualizados do pedido:", atualizado);
+}
 
-//atualizarProduto("Geladeira", { nome: "Fogão" });
+async function deletarPedido(notaFiscal) {
+    const result = await Pedido.deletarPedido(notaFiscal);
+    console.log("Pedido deletado:", result);
+    const pedidosRestantes = await Pedido.buscarPedidos();
+    console.log("Pedidos restantes no banco:", pedidosRestantes);
+}
 
-//deletarPorCpf("03245618332");
+
+//buscarTodosProdutos();
+
+//atualizarProduto("Geladeira", { preco: 2200.0 });
+
 
 //inserirPedido();
 
-//atualizarCliente("03245618332", { nome: "Julius D. Caesar", email: "julius.caesar@email.com" });
+//atualizarCliente("11502972980", { email: "carolschemeiske@email.com" });
 
 //buscarClientePorCpf("03245618332");
 
-//buscarTodosClientes();
+
 
 //deletarProduto();
 
+
+
+//TESTE CRUD DE CLIENTES
+
 //inserirCliente();
+//buscarTodosClientes();
+//buscarClientePorCpf("12345678910");
+//atualizarCliente("123455438910", { email: "isadoracostabaia@email.com" });
+//deletarPorCpf("12345678910");
+
+
 
 //inserirProdutos();
+
+//inserirPedido();
+
+//deletarPedido("NF-4436347223");
+
+//atualizarPedido("NF-4431223", { clienteCpf: "12345678901" });

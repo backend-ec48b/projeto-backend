@@ -1,12 +1,12 @@
 const connect = require("../db/connection");
 
 class Pedido {
-  constructor(notaFiscal, clienteCpf, produtos) {
-    this._id = notaFiscal;           
-    this.clienteCpf = clienteCpf;    
-    this.produtos = produtos;        
-    this.data = new Date();          
-  }
+    constructor(notaFiscal, clienteCpf, produtosNome) {
+      this._id = notaFiscal;           
+      this.clienteCpf = clienteCpf;    
+      this.produtosNome = produtosNome;        
+      this.data = new Date();          
+    }
 
   async inserirPedido() {
     try {
@@ -16,7 +16,7 @@ class Pedido {
       await collection.insertOne({
         _id: this._id,
         clienteCpf: this.clienteCpf,
-        produtos: this.produtos,
+        produtos: this.produtosNome,
         data: this.data
       });
 
