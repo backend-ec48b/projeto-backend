@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 const { connectDB, disconnectDB } = require('./db/connection'); 
 
@@ -68,6 +69,32 @@ async function iniciarSistema() {
         ];
         await Produtos.insertMany(produtosParaCriar);
         console.log("Produtos adicionados ao Pedido 1003.");
+=======
+const Cliente = require("./classes/Cliente");
+const Produto = require("./classes/Produto");
+const Pedido = require("./classes/Pedido");
+const logger = require("./logger");
+const { error } = require("winston");
+
+
+//CLIENTES
+async function inserirCliente() {
+    try{
+  const cliente = new Cliente(
+    "12345678910",
+    "Fulano da Silva",
+    "fulanodasilva@email.com", {
+        cidade: "Nova Teste",
+        rua: "Rua Teste",
+        logradouro: 123
+    });
+        await cliente.inserirCliente();
+        logger.info('Processamento principal concluído com sucesso.');
+    } catch (error) {
+        logger.error(`A aplicação parou devido ao ${error.message}`);
+    }
+}
+>>>>>>> Stashed changes
 
 
         // D. CONSULTAR Pedido (NF 1003)
