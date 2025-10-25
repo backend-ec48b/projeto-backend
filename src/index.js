@@ -1,6 +1,7 @@
-const Cliente = require("./classes/Cliente");
-const Produto = require("./classes/Produto");
-const Pedido = require("./classes/Pedido");
+const Cliente = require("./Cliente");
+const Produto = require("./Produto");
+const Pedido = require("./Pedido");
+const logger = require("./logger");
 
 
 //CLIENTES
@@ -23,12 +24,12 @@ async function buscarClientePorCpf(cpf) {
         return;
     }
 
-    console.log("Clientes cadastrado:", cliente);
+    logger.info("Clientes cadastrado:", cliente);
 }
 
 async function buscarTodosClientes() {
     const clientes = await Cliente.buscarCliente();
-    console.log("Clientes cadastrados no banco:", clientes);
+    logger.info("Clientes cadastrados no banco:", clientes);
 }
 
 async function atualizarCliente(cpf, dados) {
@@ -39,13 +40,13 @@ async function atualizarCliente(cpf, dados) {
         return;
     }
 
-    console.log("Dados atualizados do cliente:", atualizado);
+    logger.info("Dados atualizados do cliente:", atualizado);
 }
 
 async function deletarPorCpf(cpf) {
     await Cliente.deletarCliente(cpf);
     const deletado = await Cliente.buscarCliente();
-    console.log("Clientes restantes no banco:", deletado);
+    logger.info("Clientes restantes no banco:", deletado);
 }
 
 
@@ -57,7 +58,7 @@ async function inserirProdutos() {
 
 async function buscarTodosProdutos() {
     const produtos = await Produto.buscarTodosProdutos();
-    console.log("Produtos cadastrados:", produtos);
+    logger.info("Produtos cadastrados:", produtos);
 }
 
 async function atualizarProduto(nome, dados) {
@@ -65,13 +66,13 @@ async function atualizarProduto(nome, dados) {
     if(!atualizado){
         return;
     }
-    console.log("Dados atualizados do produto:", atualizado);
+    logger.info("Dados atualizados do produto:", atualizado);
 }
 
 async function deletarProduto(nome){
     await Produto.deletarProdutos(nome);
     const deletado = await Produto.buscarTodosProdutos();
-    console.log("Produtos restantes no banco:", deletado);
+    logger.info("Produtos restantes no banco:", deletado);
 }
 
 
@@ -87,19 +88,19 @@ async function inserirPedido() {
 
 async function buscarTodosPedidos() {
     const pedidos = await Pedido.buscarPedidos();
-    console.log("Pedidos cadastrados no banco:", pedidos);
+    logger.info("Pedidos cadastrados no banco:", pedidos);
 }
 
 async function atualizarPedido(notaFiscal, dados) {
     await Pedido.atualizarPedido(notaFiscal, dados);
     const atualizado = await Pedido.buscarPedidos();
-    console.log("Dados atualizados do pedido:", atualizado);
+    logger.info("Dados atualizados do pedido:", atualizado);
 }
 
 async function deletarPedido(notaFiscal) {
     await Pedido.deletarPedido(notaFiscal);
     const deletado = await Pedido.buscarPedidos();
-    console.log("Pedidos restantes no banco:", deletado);
+    logger.info("Pedidos restantes no banco:", deletado);
 }
 
 
