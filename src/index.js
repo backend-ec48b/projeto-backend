@@ -1,130 +1,30 @@
-const Cliente = require("./Cliente");
-const Produto = require("./Produto");
-const Pedido = require("./Pedido");
+const express = require('express')
+const app = express()
+const port = 3000
+const hbs = require('hbs');
+const path = require('path');
+
 const logger = require("./logger");
+const clienteRouter = require('../src/Routes/clienteroutes');
 
+app.use(express.json());
+app.use(express.urlencoded({
+    extended: true
+}));
 
-//CLIENTES
-async function inserirCliente() {
-  const cliente = new Cliente(
-    "12345678910",
-    "Fulano da Silva",
-    "fulanodasilva@email.com", {
-        cidade: "Nova Teste",
-        rua: "Rua Teste",
-        logradouro: 123
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
+
+app.get('/', (req, res) => {
+    res.render('home', {
+        layout: 'home'
     });
-  await cliente.inserirCliente();
-}
+});
 
-async function buscarClientePorCpf(cpf) {
-    const cliente = await Cliente.buscarPorCpf(cpf);
+app.use('/clientes', clienteRouter);
+//app.use('/pedido', pedidoRouter);
+//app.use('produto', produtoRouter);
 
-    if(!cliente){
-        return;
-    }
-
-    logger.info("Clientes cadastrado:", cliente);
-}
-
-async function buscarTodosClientes() {
-    const clientes = await Cliente.buscarCliente();
-    logger.info("Clientes cadastrados no banco:", clientes);
-}
-
-async function atualizarCliente(cpf, dados) {
-    await Cliente.atualizarCliente(cpf, dados);
-    const atualizado = await Cliente.buscarPorCpf(cpf);
-
-    if(!atualizado){
-        return;
-    }
-
-    logger.info("Dados atualizados do cliente:", atualizado);
-}
-
-async function deletarPorCpf(cpf) {
-    await Cliente.deletarCliente(cpf);
-    const deletado = await Cliente.buscarCliente();
-    logger.info("Clientes restantes no banco:", deletado);
-}
-
-
-//PRODUTOS
-async function inserirProdutos() {
-    const produto = new Produto("Computador Gamer", 5500.0);
-    await produto.inserirProdutos();
-}
-
-async function buscarTodosProdutos() {
-    const produtos = await Produto.buscarTodosProdutos();
-    logger.info("Produtos cadastrados:", produtos);
-}
-
-async function atualizarProduto(nome, dados) {
-    const atualizado = await Produto.atualizarProdutos(nome, dados);
-    if(!atualizado){
-        return;
-    }
-    logger.info("Dados atualizados do produto:", atualizado);
-}
-
-async function deletarProduto(nome){
-    await Produto.deletarProdutos(nome);
-    const deletado = await Produto.buscarTodosProdutos();
-    logger.info("Produtos restantes no banco:", deletado);
-}
-
-
-//PEDIDOS
-async function inserirPedido() {
-  const pedido = new Pedido(
-    "NF-4436524323",
-    "12345678910",
-    ["Computador Gamer", "Geladeira"] 
-  );
-    await pedido.inserirPedido();
-}
-
-async function buscarTodosPedidos() {
-    const pedidos = await Pedido.buscarPedidos();
-    logger.info("Pedidos cadastrados no banco:", pedidos);
-}
-
-async function atualizarPedido(notaFiscal, dados) {
-    await Pedido.atualizarPedido(notaFiscal, dados);
-    const atualizado = await Pedido.buscarPedidos();
-    logger.info("Dados atualizados do pedido:", atualizado);
-}
-
-async function deletarPedido(notaFiscal) {
-    await Pedido.deletarPedido(notaFiscal);
-    const deletado = await Pedido.buscarPedidos();
-    logger.info("Pedidos restantes no banco:", deletado);
-}
-
-
-//TESTE CRUD DE CLIENTES
-
-// inserirCliente();
-// buscarTodosClientes();
-// buscarClientePorCpf("12345678910");
-// atualizarCliente("12345678910", { email: "fulanodasilvateste@email.com" });
-// deletarPorCpf("12345678910");
-
-
-//TESTE CRUD DE PRODUTOS
-
-// inserirProdutos();
-// buscarTodosProdutos();
-// atualizarProduto("Computador Gamer", { preco: 4000.0 });
-// deletarProduto("Computador Gamer");
-
-
-//TESTE CRUD DE PEDIDOS
-
-// inserirPedido();
-// buscarTodosPedidos();
-// atualizarPedido("NF-4436524323", { produtos: ["Computador Gamer"] });
-// deletarPedido("NF-4436524323");
-
+app.listen(port, () => {
+    logger.info(`Aplicação rodando na porta: ${port}`)
+})

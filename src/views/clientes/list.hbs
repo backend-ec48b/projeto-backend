@@ -1,0 +1,50 @@
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Listagem de Clientes</h2>
+        <a href="/clientes/novo" class="btn btn-primary">
+            <i class="fas fa-plus-circle"></i> Novo Cliente
+        </a>
+    </div>
+
+    {{#if clientes}}
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th class="text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each clientes}}
+                <tr>
+                    <td>{{_id}}</td>
+                    <td>{{nome}}</td>
+                    <td>{{email}}</td>
+                    <td class="text-center">
+                        <a href="/clientes/{{_id}}" class="btn btn-sm btn-info" title="Detalhes">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="/clientes/{{_id}}/editar" class="btn btn-sm btn-warning" title="Editar">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <form action="/clientes/{{_id}}/deletar" method="POST" style="display: inline;" 
+                              onsubmit="return confirm('Tem certeza que deseja deletar o cliente {{nome}}?');">
+                            <button type="submit" class="btn btn-sm btn-danger" title="Excluir">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    {{else}}
+    <div class="alert alert-info" role="alert">
+        Nenhum cliente cadastrado. Comece adicionando um novo cliente!
+    </div>
+    {{/if}}
+</div>

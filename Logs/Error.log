@@ -1,0 +1,36 @@
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}

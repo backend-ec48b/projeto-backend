@@ -1,0 +1,50 @@
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678910"}
+{"0":{"_id":"03245618332","email":"juliusdiddy@email.com","endereco":{"cidade":"Leopolis","logradouro":467,"rua":"Rua Brasil"},"nome":"Julius Diddy"},"level":"\u001b[32minfo\u001b[39m","message":"Clientes restantes no banco:"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Fulano da Silva (12345678910)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678910"}
+{"0":{"_id":"03245618332","email":"juliusdiddy@email.com","endereco":{"cidade":"Leopolis","logradouro":467,"rua":"Rua Brasil"},"nome":"Julius Diddy"},"level":"\u001b[32minfo\u001b[39m","message":"Clientes restantes no banco:"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: asdsad (12345678911)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678911"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Silvio Bolado (12345678911)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Tiringa Matado (11122233344)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 03245618332"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}

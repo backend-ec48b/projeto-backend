@@ -1,0 +1,37 @@
+<div id="pagina-inicial">
+    <header>
+        <h1>Bem-vindo ao Sistema de Gerenciamento</h1>
+        <p>Utilize os links abaixo para acessar e gerenciar os dados da aplicação.</p>
+    </header>
+
+    <section id="modulos">
+        <h2>Módulos de Gestão</h2>
+        
+        <div class="lista-modulos">
+            <div class="card-modulo">
+                <h3>Clientes</h3>
+                <p>Gerenciamento completo de informações de clientes.</p>
+                <a href="/clientes" class="link-acesso">Acessar Clientes</a>
+            </div>
+            
+            <div class="card-modulo">
+                <h3>Produtos</h3>
+                <p>Cadastro e controle de estoque e detalhes de produtos.</p>
+                <a href="/produtos" class="link-acesso">Acessar Produtos</a>
+            </div>
+            
+            <div class="card-modulo">
+                <h3>Pedidos</h3>
+                <p>Visualização e gestão do fluxo de pedidos e vendas.</p>
+                <a href="/pedidos" class="link-acesso">Acessar Pedidos</a>
+            </div>
+            
+            </div>
+    </section>
+
+    <section id="status-resumo">
+        <h2>Resumo do Sistema</h2>
+        <p>Total de Clientes Registrados: <strong>{{stats.totalClientes}}</strong></p>
+        <p>Você tem <strong>{{stats.produtosAtivos}}</strong> produtos ativos em estoque.</p>
+    </section>
+</div>
