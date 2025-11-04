@@ -1,0 +1,63 @@
+<div class="container my-5">
+    
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Lista de Pedidos</h1>
+        <a href="/pedidos/novo" class="btn btn-success">
+             Novo Pedido
+        </a>
+    </div>
+
+    {{#if pedidos}}
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Nota Fiscal (ID)</th>
+                        <th scope="col">CPF do Cliente</th>
+                        <th scope="col">Data do Pedido</th>
+
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each pedidos}}
+                    <tr>
+                        <th scope="row">{{this._id}}</th>
+                        <td>{{this.clienteCpf}}</td>
+                        <td>{{this.data}}</td>
+                        
+                        <td>
+                            {{#if this.produtos}}
+                                {{this.produtos.length}}
+                            {{else}}
+                                0
+                            {{/if}}
+                        </td>
+                        
+                        <td>
+                            <a href="/pedidos/{{this._id}}" class="btn btn-sm btn-info me-2" title="Ver Detalhes">
+                                Detalhes
+                            </a>
+                            
+                            <a href="/pedidos/{{this._id}}/editar" class="btn btn-sm btn-warning me-2" title="Editar Pedido">
+                                Editar
+                            </a>
+                            
+                            <form action="/pedidos/{{this._id}}/deletar" method="POST" style="display: inline;">
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza que deseja deletar o pedido {{this._id}}?');" title="Deletar Pedido">
+                                    Deletar
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    {{else}}
+        <div class="alert alert-info mt-4" role="alert">
+            Nenhum pedido encontrado. <a href="/pedidos/novo">Crie o primeiro!</a>
+        </div>
+    {{/if}}
+</div>

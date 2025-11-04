@@ -34,3 +34,9 @@
 {"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
 {"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
 {"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Já existe um pedido com essa nota fiscal.","stack":"Error: Já existe um pedido com essa nota fiscal.\n    at Pedido.inserirPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\model\\Pedido.js:23:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:47:13)"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar produto: Produto não encontrado"}

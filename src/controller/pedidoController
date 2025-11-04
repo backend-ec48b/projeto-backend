@@ -1,0 +1,154 @@
+const Pedido = require('../model/Pedido');
+
+async function getPedido(notaFiscal) {
+    const todosPedidos = await Pedido.buscarPedidos();
+    if (todosPedidos) {
+        return todosPedidos.find(p => p._id === notaFiscal);
+    }
+    return null;
+}
+
+class PedidoController {
+
+    // Lista todos os pedidos GET == /pedidos
+    async listar(req, res) {
+        try {
+            const pedidos = await Pedido.buscarPedidos();
+            res.render('pedidos/list', {
+                pedidos: pedidos,
+                title: 'Lista de Pedidos'
+            });
+
+        } catch (error) {
+            res.status(500).send(`Erro ao listar pedidos: ${error.message}`);
+        }
+    }
+
+    // Exibe forms de novo pedido GET == /pedidos/novo
+    exibirFormulario(req, res) {
+        res.render('pedidos/form', {
+            title: 'Criar Novo Pedido'
+        });
+    }
+
+    // Inserir novo pedido POST == /pedidos
+    async inserir(req, res) {
+        const {
+            notaFiscal,
+            clienteCpf,
+            produtosNome
+        } = req.body;
+
+        try {
+            if (!notaFiscal || !clienteCpf || !produtosNome) {
+                throw new Error("Campos obrigatórios ausentes.");
+            }
+
+            const novoPedido = new Pedido(notaFiscal, clienteCpf, produtosNome);
+            await novoPedido.inserirPedido();
+
+            res.redirect('/pedidos');
+
+        } catch (error) {
+            res.render('pedidos/form', {
+                title: 'Criar Novo Pedido',
+                error: error.message,
+                dadosAnteriores: req.body
+            });
+        }
+    }
+
+    // Busca e exibe detalhes ROTA GET == /pedidos/:id
+    async buscarDetalhes(req, res) {
+        const notaFiscal = req.params.id;
+
+        try {
+            const pedido = await getPedido(notaFiscal);
+
+            if (!pedido) {
+                return res.status(404).render('404', {
+                    message: 'Pedido não encontrado.'
+                });
+            }
+
+            res.render('pedidos/detail', {
+                item: pedido,
+                title: `Detalhe do Pedido #${notaFiscal}`
+            });
+
+        } catch (error) {
+            res.status(500).send(`Erro ao buscar pedido: ${error.message}`);
+        }
+    }
+
+    // Deleta um pedido específico POST == /pedidos/:id/deletar)
+    async deletar(req, res) {
+        const notaFiscal = req.params.id;
+
+        try {
+            await Pedido.deletarPedido(notaFiscal);
+
+            res.redirect('/pedidos');
+
+        } catch (error) {
+            res.status(500).send(`Erro ao deletar pedido ${notaFiscal}: ${error.message}`);
+        }
+    }
+
+    // Exibe formulário de edição GET == /pedidos/:id/editar
+    async exibirEdicao(req, res) {
+        const notaFiscal = req.params.id;
+        const pedido = await getPedido(notaFiscal);
+
+        if (!pedido) {
+            return res.status(404).render('404', {
+                message: 'Pedido para edição não encontrado.'
+            });
+        }
+
+        res.render('pedidos/form', {
+            item: pedido,
+            title: `Editar Pedido #${notaFiscal}`
+        });
+    }
+
+    // Processa atualização POST == /pedidos/:id
+    async atualizar(req, res) {
+        const notaFiscal = req.params.id;
+        const dados = req.body;
+
+        try {
+            await Pedido.atualizarPedido(notaFiscal, dados);
+            res.redirect('/pedidos');
+
+        } catch (error) {
+            res.render('pedidos/form', {
+                item: {
+                    ...dados,
+                    _id: notaFiscal
+                },
+                error: error.message,
+                title: `Erro ao Editar Pedido #${notaFiscal}`
+            });
+        }
+    }
+
+    // Atualizar Status POST == /pedidos/:id/status
+    async atualizarStatus(req, res) {
+        const notaFiscal = req.params.id;
+        const {
+            novoStatus
+        } = req.body;
+
+        try {
+            await Pedido.atualizarPedido(notaFiscal, {
+                status: novoStatus
+            });
+            res.redirect(`/pedidos/${notaFiscal}`);
+        } catch (error) {
+            res.status(500).send(`Erro ao atualizar status: ${error.message}`);
+        }
+    }
+}
+
+module.exports = new PedidoController();
