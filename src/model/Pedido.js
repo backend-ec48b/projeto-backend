@@ -3,15 +3,15 @@ const logger = require("../logger");
 
 class Pedido {
   constructor(notaFiscal, clienteCpf, produtosNome) {
-    this._id = notaFiscal;           
-    this.clienteCpf = clienteCpf;    
-    this.produtosNome = produtosNome;        
-    this.data = new Date();          
+    this._id = notaFiscal;
+    this.clienteCpf = clienteCpf;
+    this.produtos = produtosNome; 
+    this.data = new Date();
   }
 
   async inserirPedido() {
     try {
-      if (!this._id || !this.clienteCpf || !this.produtosNome) {
+      if (!this._id || !this.clienteCpf || !this.produtos) {
         throw new Error("Campos obrigatórios ausentes: nota fiscal, CPF ou produtos.");
       }
 
@@ -20,13 +20,14 @@ class Pedido {
 
       const existente = await collection.findOne({ _id: this._id });
       if (existente) {
+        client.close();
         throw new Error("Já existe um pedido com essa nota fiscal.");
       }
 
       await collection.insertOne({
         _id: this._id,
         clienteCpf: this.clienteCpf,
-        produtos: this.produtosNome,
+        produtos: this.produtos,
         data: this.data
       });
 
@@ -34,7 +35,8 @@ class Pedido {
       client.close();
 
     } catch (error) {
-        logger.error("Erro ao inserir pedido", error);
+      logger.error(`Erro ao inserir pedido: ${error.message}`);
+      throw error; // Propaga o erro de volta para o Controller
     }
   }
 
@@ -46,13 +48,17 @@ class Pedido {
       return result;
 
     } catch (error) {
-        logger.error(`Erro ao buscar pedidos: ${error.message}`);
+      logger.error(`Erro ao buscar pedidos: ${error.message}`);
+      throw error; // Permite que o Controller lide com o erro
     }
   }
 
   static async atualizarPedido(notaFiscal, dados) {
+    let client;
     try {
-      const { db, client } = await connect();
+      const dbConnection = await connect();
+      db = dbConnection.db;
+      client = dbConnection.client;
       const collection = db.collection("pedidos");
 
       const existente = await collection.findOne({ _id: notaFiscal });
@@ -65,12 +71,14 @@ class Pedido {
         { $set: dados }
       );
 
-      client.close();
       logger.info(`Pedido ${notaFiscal} atualizado com sucesso.`);
       return result;
 
     } catch (error) {
       logger.error(`Erro ao atualizar pedido: ${error.message}`);
+      throw error;
+    } finally {
+      if (client) client.close();
     }
   }
 
@@ -81,15 +89,17 @@ class Pedido {
 
       const result = await collection.deleteOne({ _id: notaFiscal });
       if (result.deletedCount === 0) {
+        client.close();
         throw new Error("Pedido não encontrado");
       }
 
-      client.close();
       logger.info(`Pedido ${notaFiscal} excluído com sucesso.`);
+      client.close();
       return result;
 
     } catch (error) {
       logger.error(`Erro ao deletar pedido: ${error.message}`);
+      throw error;
     }
   }
 }

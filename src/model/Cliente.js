@@ -1,117 +1,152 @@
-const connect  = require("../connection");
+const connect = require("../connection");
 const logger = require("../logger");
 
 class Cliente {
-  constructor(cpf, nome, email, endereco) {
-    this._id = cpf; 
-    this.nome = nome;
-    this.email = email;
-    this.endereco = {
-      rua: endereco.rua,
-      cidade: endereco.cidade,
-      logradouro: endereco.logradouro
-    }; 
-  }
-
-  async inserirCliente() {
-    try {
-        if (!this._id || this._id.length !== 11) {
-          throw new Error("CPF inválido. Deve conter 11 dígitos");
-        }
-
-        const { db, client } = await connect();
-        const collection = db.collection("clientes");
-        const existente = await collection.findOne({ _id: this.cpf });
-
-        if (existente) {
-          throw new Error();
-        }
-
-        await collection.insertOne({
-          _id: this._id,
-          nome: this.nome,
-          email: this.email,
-          endereco: this.endereco,
-        });
-
-        logger.info(`Cliente inserido com sucesso: ${this.nome} (${this._id})`);
-        client.close();
-
-    } catch (error) {
-        logger.error(`Erro ao criar cliente: ${error.message}`);
+    constructor(cpf, nome, email, endereco) {
+        this._id = cpf;
+        this.nome = nome;
+        this.email = email;
+        this.endereco = endereco;
     }
-  }
 
-  static async buscarCliente() {
-    try {
-        const { db, client } = await connect();
-        const result = await db.collection("clientes").find().toArray();
-        client.close();
-        
-        return result;
+    static async contarTotal() {
+        let client;
+        try {
+            const { db, client: dbClient } = await connect();
+            client = dbClient;
+            
+            const count = await db.collection("clientes").countDocuments({});
+            return count;
 
-    } catch (err) {
-        console.error(`Erro ao buscar clientes: ${error.message}`);
-    }
-  }
-
-  static async buscarPorCpf(cpf) {
-    try {
-        const { db, client } = await connect();
-        const result = await db.collection("clientes").findOne({ _id: cpf });
-        client.close();
-
-        if (!result) {
-          throw new Error("Cliente não encontrado");
+        } catch (error) {
+            logger.error(`Erro ao contar clientes: ${error.message}`);
+            return 0; 
+        } finally {
+            if (client) client.close();
         }
-
-        return result;
-
-    } catch (error) {
-        logger.error(`Erro ao buscar cliente por CPF: ${error.message}`);
     }
-  }
 
-  static async atualizarCliente(cpf, dados) {
-    try {
-        const { db, client } = await connect();
-        const collection = db.collection("clientes");
+    async inserirCliente() {
+        let client;
+        try {
+            if (!this._id || this._id.length !== 11) {
+                throw new Error("CPF inválido. Deve conter 11 dígitos");
+            }
 
-        const existente = await collection.findOne({ _id: cpf });
-        if (!existente) {
-          throw new Error("Cliente não encontrado");
+            const { db, client: dbClient } = await connect();
+            client = dbClient;
+            const collection = db.collection("clientes");
+            
+            const existente = await collection.findOne({ _id: this._id });
+
+            if (existente) {
+                throw new Error("Cliente já cadastrado");
+            }
+
+            await collection.insertOne({
+                _id: this._id,
+                nome: this.nome,
+                email: this.email,
+                endereco: this.endereco,
+            });
+
+            logger.info(`Cliente inserido com sucesso: ${this.nome} (${this._id})`);
+
+        } catch (error) {
+            logger.error(`Erro ao criar cliente: ${error.message}`);
+            throw error;
+        } finally {
+            if (client) client.close();
         }
-
-        const result = await collection.updateOne({ _id: cpf },{ $set: dados });
-
-        client.close();
-        logger.info(`Cliente atualizado com sucesso: ${cpf}`);
-        return result;
-
-    } catch (error) {
-        logger.error(`Erro ao atualizar cliente: ${error.message}`);
     }
-  }
 
-  static async deletarCliente(cpf) {
-    try {
-        const { db, client } = await connect();
-        const collection = db.collection("clientes");
+    static async buscarCliente() {
+        let client;
+        try {
+            const { db, client: dbClient } = await connect();
+            client = dbClient;
+            
+            const result = await db.collection("clientes").find().toArray();
+            return result;
 
-        const existente = await collection.findOne({ _id: cpf });
-        if (!existente) {
-          throw new Error("Cliente não encontrado");
+        } catch (error) {
+            logger.error(`Erro ao buscar clientes: ${error.message}`);
+            throw error;
+        } finally {
+            if (client) client.close();
         }
-
-        const result = await collection.deleteOne({ _id: cpf });
-        client.close();
-        logger.info(`Cliente deletado com sucesso: ${cpf}`);
-        return result;
-
-    } catch (error) {
-        logger.error(`Erro ao deletar cliente: ${error.message}`);
     }
-  }
+
+    static async buscarPorCpf(cpf) {
+        let client;
+        try {
+            const { db, client: dbClient } = await connect();
+            client = dbClient;
+            
+            const result = await db.collection("clientes").findOne({ _id: cpf });
+
+            if (!result) {
+                throw new Error("Cliente não encontrado");
+            }
+
+            return result;
+
+        } catch (error) {
+            logger.error(`Erro ao buscar cliente por CPF: ${error.message}`);
+            throw error;
+        } finally {
+            if (client) client.close();
+        }
+    }
+
+    static async atualizarCliente(cpf, dados) {
+        let client;
+        try {
+            const { db, client: dbClient } = await connect();
+            client = dbClient;
+            const collection = db.collection("clientes");
+
+            const existente = await collection.findOne({ _id: cpf });
+            if (!existente) {
+                throw new Error("Cliente não encontrado");
+            }
+            
+            const result = await collection.updateOne({ _id: cpf }, { $set: dados });
+
+            logger.info(`Cliente atualizado com sucesso: ${cpf}`);
+            return result;
+
+        } catch (error) {
+            logger.error(`Erro ao atualizar cliente: ${error.message}`);
+            throw error;
+        } finally {
+            if (client) client.close();
+        }
+    }
+
+    static async deletarCliente(cpf) {
+        let client;
+        try {
+            const { db, client: dbClient } = await connect();
+            client = dbClient;
+            const collection = db.collection("clientes");
+
+            const result = await collection.deleteOne({ _id: cpf });
+            
+            if (result.deletedCount === 0) {
+                throw new Error("Cliente não encontrado");
+            }
+            
+            logger.info(`Cliente deletado com sucesso: ${cpf}`);
+            return result;
+
+        } catch (error) {
+            logger.error(`Erro ao deletar cliente: ${error.message}`);
+            throw error; 
+        } finally {
+            if (client) client.close();
+        }
+    }
 }
 
 module.exports = Cliente;

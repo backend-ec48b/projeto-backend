@@ -19,13 +19,14 @@ app.use(express.urlencoded({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+
+
 // Pagina principal
 app.get('/', (req, res) => {
     res.render('home', {
         layout: 'home'
     });
 });
-
 //Rotas para clientes
 app.use('/clientes', clienteRouter);
 //Rotas para pedidos

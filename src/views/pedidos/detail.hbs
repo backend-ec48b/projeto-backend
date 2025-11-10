@@ -1,45 +1,45 @@
-<div class="container my-5">
+<div>
     
-    <h1 class="mb-4">Detalhes do Pedido <span class="text-primary">#{{item._id}}</span></h1>
+    <h1>Detalhes do Pedido <span>#{{item._id}}</span></h1>
     
-    <div class="card shadow-sm">
-        <div class="card-body">
+    <div>
+        <div>
 
-            <div class="row detail-group">
-                <div class="col-md-4"><strong>Nota Fiscal (ID):</strong></div>
-                <div class="col-md-8 fw-bold">{{item._id}}</div>
+            <div>
+                <div><strong>Nota Fiscal (ID):</strong></div>
+                <div>{{item._id}}</div>
             </div>
 
-            <div class="row detail-group">
-                <div class="col-md-4"><strong>CPF do Cliente:</strong></div>
-                <div class="col-md-8">{{item.clienteCpf}}</div>
+            <div>
+                <div><strong>CPF do Cliente:</strong></div>
+                <div>{{item.clienteCpf}}</div>
             </div>
 
-            <div class="row detail-group">
-                <div class="col-md-4"><strong>Data do Pedido:</strong></div>
-                <div class="col-md-8">{{item.data}}</div>
+            <div>
+                <div><strong>Data do Pedido:</strong></div>
+                <div>{{item.data}}</div>
             </div>
 
             <hr>
 
-            <h5 class="mt-4 mb-3">Produtos Incluídos:</h5>
+            <h5>Produtos Incluídos:</h5>
             
             {{#if item.produtos}}
-                <ul class="list-group">
+                <ul>
                     {{#each item.produtos}}
-                        <li class="list-group-item">{{this}}</li> 
+                        <li>{{this}}</li> 
                     {{/each}}
                 </ul>
             {{else}}
-                <p class="text-muted">Nenhum produto listado neste pedido.</p>
+                <p>Nenhum produto listado neste pedido.</p>
             {{/if}}
             
         </div>
     </div>
     
-    <div class="d-flex justify-content-end mt-4">
-        <a href="/pedidos/{{item._id}}/editar" class="btn btn-warning me-2">Editar Pedido</a>
-        <a href="/pedidos" class="btn btn-secondary">Voltar para a Lista</a>
+    <div>
+        <a href="/pedidos/{{item._id}}/editar">Editar Pedido</a>
+        <a href="/pedidos">Voltar para a Lista</a>
     </div>
 
 </div>

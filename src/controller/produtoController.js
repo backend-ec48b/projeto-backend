@@ -1,4 +1,8 @@
 const Produto = require('../model/Produto');
+const logger = require('../logger');
+const {
+    log
+} = require('winston');
 
 async function getProduto(nome) {
     const todosProdutos = await Produto.buscarTodosProdutos();
@@ -11,6 +15,7 @@ async function getProduto(nome) {
 class ProdutoController {
 
     async listar(req, res) {
+        logger.info('Listando todos os produtos');
         try {
             const produtos = await Produto.buscarTodosProdutos();
             res.render('produtos/list', {
@@ -18,6 +23,7 @@ class ProdutoController {
                 title: 'Lista de Produtos'
             });
         } catch (error) {
+            logger.error(`Erro ao listar produtos: ${error.message}`);
             res.status(500).send(`Erro ao listar produtos: ${error.message}`);
         }
     }
@@ -37,6 +43,7 @@ class ProdutoController {
 
         try {
             if (!nome || !preco) {
+                logger.warn('Nome ou preço do produto não fornecidos.');
                 throw new Error("Nome e preço são obrigatórios.");
             }
 
@@ -46,6 +53,7 @@ class ProdutoController {
             res.redirect('/produtos');
 
         } catch (error) {
+            logger.error(`Erro ao inserir produto ${nome}: ${error.message}`);
             res.render('produtos/form', {
                 title: 'Criar Novo Produto',
                 error: error.message,
@@ -72,6 +80,7 @@ class ProdutoController {
             });
 
         } catch (error) {
+            logger.error(`Erro ao buscar produto: ${error.message}`);
             res.status(500).send(`Erro ao buscar produto: ${error.message}`);
         }
     }
@@ -84,6 +93,7 @@ class ProdutoController {
             const produto = await getProduto(nomeProduto);
 
             if (!produto) {
+                logger.warn(`Produto ${nomeProduto} não encontrado para edição.`);
                 return res.status(404).render('404', {
                     message: 'Produto para edição não encontrado.'
                 });
@@ -94,6 +104,7 @@ class ProdutoController {
                 title: `Editar Produto: ${nomeProduto}`
             });
         } catch (error) {
+            logger.error(`Erro ao buscar produto para edição: ${error.message}`);
             res.status(500).send(`Erro ao buscar produto para edição: ${error.message}`);
         }
     }
@@ -102,13 +113,24 @@ class ProdutoController {
     async atualizar(req, res) {
         const nomeOriginal = req.params.nome;
         const dadosAtualizacao = req.body;
+        const {
+            nome,
+            preco
+        } = dadosAtualizacao;
+
+        // Validação
+        if (!nome || !preco) {
+            logger.warn(`Validação de atualização falhou para "${nomeOriginal}": Nome e preço são obrigatórios.`);
+            throw new Error("Nome e preço são obrigatórios.");
+        }
 
         try {
             await Produto.atualizarProdutos(nomeOriginal, dadosAtualizacao);
 
-            res.redirect('/produtos'); 
+            res.redirect('/produtos');
 
         } catch (error) {
+            logger.error(`Erro ao atualizar produto "${nomeOriginal}": ${error.message}`);
             res.render('produtos/form', {
                 item: {
                     ...dadosAtualizacao,
@@ -127,9 +149,11 @@ class ProdutoController {
         try {
             await Produto.deletarProdutos(nomeProduto);
 
-            res.redirect('/produtos'); 
+            logger.info(`Produto ${nomeProduto} deletado com sucesso.`);
+            res.redirect('/produtos');
 
         } catch (error) {
+            logger.error(`Erro ao deletar produto ${nomeProduto}: ${error.message}`);
             res.status(500).send(`Erro ao deletar produto ${nomeProduto}: ${error.message}`);
         }
     }

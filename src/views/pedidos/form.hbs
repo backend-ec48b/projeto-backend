@@ -1,6 +1,6 @@
 <div class="container my-5">
     
-    <h1 class="mb-4">{{#if item}}Editar Pedido #{{item._id}}{{else}}Criar Novo Pedido{{/if}}</h1>
+    <h1>{{#if item}}Editar Pedido #{{item._id}}{{else}}Criar Novo Pedido{{/if}}</h1>
     
     {{#if error}}
         <div class="alert alert-danger" role="alert">
@@ -8,38 +8,46 @@
         </div>
     {{/if}}
 
-    <form method="POST" action="/pedidos/{{#if item}}{{item._id}}{{/if}}">
+    <form method="POST" action="/pedidos/{{#if item}}{{item._id}}{{/if}}" novalidate>
 
-        <div class="form-group mb-3">
-            <label for="notaFiscal">Nota Fiscal (ID):</label>
+        {{!-- O campo Nota Fiscal só é exibido na EDIÇÃO ({{#if item}}), pois na CRIAÇÃO ele é gerado automaticamente pelo Controller. --}}
+        {{#if item}}
+            <div>
+                <label for="notaFiscal">Nota Fiscal (ID):</label>
+                <input 
+                    type="text" 
+                    class="form-control"
+                    id="notaFiscal" 
+                    name="notaFiscal" 
+                    value="{{item._id}}"
+                    required 
+                    readonly 
+                >
+            </div>
+        {{/if}}
+
+        <div>
+            <label for="clienteCpf">CPF do Cliente (Somente Números):</label>
             <input 
                 type="text" 
-                class="form-control" 
-                id="notaFiscal" 
-                name="notaFiscal" 
-                value="{{#if item}}{{item._id}}{{else}}{{dadosAnteriores.notaFiscal}}{{/if}}"
-                required 
-                {{#if item}}disabled readonly{{/if}} 
-            >
-            {{#if item}}
-                <input type="hidden" name="notaFiscal" value="{{item._id}}">
-            {{/if}}
-        </div>
-
-        <div class="form-group mb-3">
-            <label for="clienteCpf">CPF do Cliente:</label>
-            <input 
-                type="text" 
-                class="form-control" 
+                class="form-control"
                 id="clienteCpf" 
                 name="clienteCpf" 
                 value="{{#if item}}{{item.clienteCpf}}{{else}}{{dadosAnteriores.clienteCpf}}{{/if}}"
-                placeholder="Ex: 123.456.789-00"
+                placeholder="Ex: 12345678900 (11 dígitos)"
                 required 
+                
+                {{!-- Esta linha remove caracteres não-numéricos e limita a 11 dígitos em tempo real. --}}
+                oninput="this.value = this.value.replace(/\D/g, '').slice(0, 11)"
+                
+                inputmode="numeric"
+                pattern="\d{11}" 
+                title="O CPF deve conter exatamente 11 dígitos numéricos."
             >
+            <small class="form-text text-muted">Digite apenas os 11 dígitos do CPF, sem pontos ou traços.</small>
         </div>
 
-        <div class="form-group mb-4">
+        <div>
             <label for="produtosNome">Nomes dos Produtos (Separados por vírgula):</label>
             <textarea 
                 class="form-control" 
@@ -51,7 +59,7 @@
             >{{#if item}}{{#each item.produtos}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}{{else}}{{dadosAnteriores.produtosNome}}{{/if}}</textarea>
         </div>
 
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between mt-4">
             <button type="submit" class="btn btn-primary">
                 {{#if item}}Atualizar Pedido{{else}}Criar Pedido{{/if}}
             </button>
