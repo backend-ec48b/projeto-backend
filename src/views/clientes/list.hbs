@@ -1,0 +1,50 @@
+<div>
+    <div>
+        <h2>Listagem de Clientes</h2>
+        <a href="/clientes/novo" class="btn btn-primary">
+            <i>IconeAqui</i> Novo Cliente
+        </a>
+    </div>
+
+    {{#if clientes}}
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each clientes}}
+                <tr>
+                    <td>{{_id}}</td>
+                    <td>{{nome}}</td>
+                    <td>{{email}}</td>
+                    <td>
+                        <a href="/clientes/{{_id}}" title="Detalhes">
+                            <i>Detalhes</i>
+                        </a>
+                        <a href="/clientes/{{_id}}/editar" title="Editar">
+                            <i class="fas fa-edit">Editar</i>
+                        </a>
+                        <form action="/clientes/{{_id}}/deletar" method="POST" style="display: inline;" 
+                              onsubmit="return confirm('Tem certeza que deseja deletar o cliente {{nome}}?');">
+                            <button type="submit"title="Excluir">
+                                <i>Excluir</i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    {{else}}
+    <div role="alert">
+        Nenhum cliente cadastrado. Comece adicionando um novo cliente!
+    </div>
+    {{/if}}
+</div>

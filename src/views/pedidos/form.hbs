@@ -1,0 +1,66 @@
+<div class="container my-5">
+    
+    <h1>{{#if item}}Editar Pedido #{{item._id}}{{else}}Criar Novo Pedido{{/if}}</h1>
+    
+    {{#if error}}
+        <div class="alert alert-danger" role="alert">
+            Erro: {{error}}
+        </div>
+    {{/if}}
+
+    <form method="POST" action="/pedidos/{{#if item}}{{item._id}}{{/if}}" novalidate>
+
+        {{#if item}}
+            <div>
+                <label for="notaFiscal">Nota Fiscal (ID):</label>
+                <input 
+                    type="text" 
+                    class="form-control"
+                    id="notaFiscal" 
+                    name="notaFiscal" 
+                    value="{{item._id}}"
+                    required 
+                    readonly 
+                >
+            </div>
+        {{/if}}
+
+        <div>
+            <label for="clienteCpf">CPF do Cliente (Somente Números):</label>
+            <input 
+                type="text" 
+                class="form-control"
+                id="clienteCpf" 
+                name="clienteCpf" 
+                value="{{#if item}}{{item.clienteCpf}}{{else}}{{dadosAnteriores.clienteCpf}}{{/if}}"
+                placeholder="Ex: 12345678900 (11 dígitos)"
+                required 
+                oninput="this.value = this.value.replace(/\D/g, '').slice(0, 11)"                
+                inputmode="numeric"
+                pattern="\d{11}" 
+                title="O CPF deve conter exatamente 11 dígitos numéricos."
+            >
+            <small class="form-text text-muted">Digite apenas os 11 dígitos do CPF, sem pontos ou traços.</small>
+        </div>
+
+        <div>
+            <label for="produtosNome">Nomes dos Produtos (Separados por vírgula):</label>
+            <textarea 
+                class="form-control" 
+                id="produtosNome" 
+                name="produtosNome" 
+                rows="4" 
+                placeholder="Ex: Produto A, Produto B, Produto C"
+                required
+            >{{#if item}}{{#each item.produtos}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}{{else}}{{dadosAnteriores.produtosNome}}{{/if}}</textarea>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <button type="submit" class="btn btn-primary">
+                {{#if item}}Atualizar Pedido{{else}}Criar Pedido{{/if}}
+            </button>
+            <a href="/pedidos" class="btn btn-secondary">Cancelar e Voltar</a>
+        </div>
+        
+    </form>
+</div>

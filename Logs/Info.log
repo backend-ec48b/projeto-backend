@@ -1,0 +1,1402 @@
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: E11000 duplicate key error collection: ecommerce.clientes index: _id_ dup key: { _id: \"12345678910\" }"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678910"}
+{"0":{"_id":"03245618332","email":"juliusdiddy@email.com","endereco":{"cidade":"Leopolis","logradouro":467,"rua":"Rua Brasil"},"nome":"Julius Diddy"},"level":"\u001b[32minfo\u001b[39m","message":"Clientes restantes no banco:"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Fulano da Silva (12345678910)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678910"}
+{"0":{"_id":"03245618332","email":"juliusdiddy@email.com","endereco":{"cidade":"Leopolis","logradouro":467,"rua":"Rua Brasil"},"nome":"Julius Diddy"},"level":"\u001b[32minfo\u001b[39m","message":"Clientes restantes no banco:"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: asdsad (12345678911)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678911"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Silvio Bolado (12345678911)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Tiringa Matado (11122233344)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 03245618332"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: ASD (11133344455)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 11133344455"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao buscar cliente por CPF: Cliente não encontrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente atualizado com sucesso: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 1231231 excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asda atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asda atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asda atualizado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Já existe um pedido com essa nota fiscal.","stack":"Error: Já existe um pedido com essa nota fiscal.\n    at Pedido.inserirPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\model\\Pedido.js:23:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:47:13)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12313 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12313 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asdads excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12313 excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asda atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asdasdsad atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asdasdsad atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asda atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asdasdsad atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asdasdsad excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'PC gamer' inserido com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'IPad' atualizado com sucesso"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar produto: Produto não encontrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'PC gamer' deletado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asdads' inserido com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asdads' deletado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asda atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente atualizado com sucesso: 11122233344"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso:  (11122244567)"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: CPF inválido. Deve conter 11 dígitos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12344455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso:  (12344455512)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12344455512 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 3 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345622212"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso:  (12345622212)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345622212 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 4 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 12345622212"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345622212"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345622212 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 3 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 12344455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12344455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12344455512 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 11122244567"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 11122244567"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11122244567 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo Nome é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123123"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123123: O campo E-mail é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123123"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123123: Rua e Cidade do Endereço são obrigatórios."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123: O campo Nome é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123: Cannot access 'cpfLimpo' before initialization"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 12345622211: O campo Nome é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 12345622211: O campo E-mail é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 12345622211: Rua, Cidade e Logradouro do Endereço são obrigatórios."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: ASD (12345622211)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12345622211 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345699900"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 12345699900: O campo Nome é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345699900"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 12345699900: O campo E-mail é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345699900"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 12345699900: Rua é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345699900"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 12345699900: Cidade é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345699900"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 12345699900: Logradouro é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345699900"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: asd (12345699900)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345699900 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 3 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 12345699900"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345699900"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345699900 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 11122233344"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 11122233344"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 11122233344"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: Novo CPF 1112223334411122233344 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar cliente 11122233344: O CPF deve conter exatamente 11 dígitos na atualização."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 11122233344"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 11122233344"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 11122233344"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 11122233344"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11122233344 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 23444455512"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 23444455512: Rua é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 23444455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Jailson Mendes (23444455512)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 23444455512 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 23444455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 23444455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar cliente 12345622211: Cidade é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar cliente 12345622211: Logradouro é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar cliente 12345622211: Logradouro é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar cliente 12345622211: Logradouro é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar cliente 12345622211: Cidade é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar cliente 12345622211: Cidade é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar cliente 12345622211: Cidade é obrigatório"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao atualizar cliente 12345622211: Cidade é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 23444455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 23444455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 23444455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 23444455512"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 23444455512 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 123: O campo Nome é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 123: O campo E-mail é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 123: Rua é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente 123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: asdsa (12345678922)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345678922 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao atualizar cliente 12345622211: Cidade é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345622211"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao atualizar cliente 12345622211: Logradouro é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo Nome é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo E-mail é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : Rua é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : Cidade é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : Logradouro é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12312345622"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: asd (12312345622)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12312345622 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 3 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12312345622"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12312345622"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12312345622"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente atualizado com sucesso: 12312345622"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12312345622 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12312345622"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 12312345622"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12312345622"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12312345622 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12345678922 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: "}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente : O campo CPF é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 123"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF 123 tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 123: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345678911"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 12345678911: O campo Nome é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345678911"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao inserir cliente 12345678911: O campo E-mail é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: asd (12345678911)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12345678911 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 2 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente atualizado com sucesso: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12345678911 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345678911"}
+{"level":"\u001b[31merror\u001b[39m","message":"❌ Erro ao atualizar cliente 12345678911: Rua é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de atualização do cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente atualizado com sucesso: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12345678911 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando detalhes do cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de deletar cliente CPF: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente deletado com sucesso: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ Cliente 12345678911 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao atualizar produto: Produto não encontrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'IPad' atualizado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Nome ou preço do produto não fornecidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir produto : Nome e preço são obrigatórios."}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Nome ou preço do produto não fornecidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir produto asd: Nome e preço são obrigatórios."}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Nome ou preço do produto não fornecidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir produto asd: Nome e preço são obrigatórios."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asd' inserido com sucesso"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir produto asd: loogger is not defined"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asd' inserido com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto asd inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Nome ou preço do produto não fornecidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir produto : Nome e preço são obrigatórios."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asddsd' inserido com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto asddsd inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asd' deletado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto asd deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asd' atualizado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asd' atualizado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asdd' deletado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto asdd deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Nome ou preço do produto não fornecidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir produto : Nome e preço são obrigatórios."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos (listar todos)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Foram encontrados 2 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos/novo (exibir formulário de criação)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos (listar todos)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Foram encontrados 2 pedidos."}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Requisição POST para /pedidos/asda/deletar (exclusão)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asda excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asda deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos (listar todos)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Foram encontrados 1 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos (listar todos)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Foram encontrados 1 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos/12312312333 (detalhes)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Busca de todos os pedidos concluída. Tentando encontrar pedido 12312312333."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Detalhes do pedido 12312312333 exibidos com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos/12312312333/editar (exibir formulário de edição)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Busca de todos os pedidos concluída. Tentando encontrar pedido 12312312333."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Exibindo formulário de edição para o pedido 12312312333."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos (listar todos)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Foram encontrados 1 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos/novo (exibir formulário de criação)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos (listar todos)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Foram encontrados 1 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos/novo (exibir formulário de criação)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição POST para /pedidos (inserir novo). Nota Fiscal: asd"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asd inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos (listar todos)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Foram encontrados 2 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Requisição GET para /pedidos/12312312333/editar (exibir formulário de edição)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Busca de todos os pedidos concluída. Tentando encontrar pedido 12312312333."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Exibindo formulário de edição para o pedido 12312312333."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[listar] Requisição GET para /pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[listar] Foram encontrados 2 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[exibirEdicao] Requisição GET para /pedidos/12312312333/editar."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[exibirEdicao] Exibindo formulário de edição para o pedido 12312312333."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[atualizar] Requisição POST para /pedidos/12312312333 (atualização)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ [atualizar] Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[listar] Requisição GET para /pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[listar] Foram encontrados 2 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[exibirEdicao] Requisição GET para /pedidos/12312312333/editar."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[exibirEdicao] Exibindo formulário de edição para o pedido 12312312333."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[atualizar] Requisição POST para /pedidos/12312312333 (atualização)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ [atualizar] Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[listar] Requisição GET para /pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[listar] Foram encontrados 2 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[exibirEdicao] Requisição GET para /pedidos/12312312333/editar."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[exibirEdicao] Exibindo formulário de edição para o pedido 12312312333."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[atualizar] Requisição POST para /pedidos/12312312333 (atualização)."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ [atualizar] Pedido 12312312333 atualizado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[listar] Requisição GET para /pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[listar] Foram encontrados 2 pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[exibirFormulario] Requisição GET para /pedidos/novo."}
+{"level":"\u001b[32minfo\u001b[39m","message":"[inserir] Requisição POST. NF: "}
+{"body":{"clienteCpf":"","notaFiscal":"","produtosNome":""},"level":"\u001b[33mwarn\u001b[39m","message":"❌ [inserir] Tentativa de inserção falhou: Campos obrigatórios ausentes."}
+{"body":{"clienteCpf":"","notaFiscal":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido : Campos obrigatórios ausentes.","stack":"Error: Campos obrigatórios ausentes.\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:68:23)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:186:3)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[inserir] Requisição POST. NF: "}
+{"body":{"clienteCpf":"","notaFiscal":"","produtosNome":""},"level":"\u001b[33mwarn\u001b[39m","message":"❌ [inserir] Tentativa de inserção falhou: Campos obrigatórios ausentes."}
+{"body":{"clienteCpf":"","notaFiscal":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido : Campos obrigatórios ausentes.","stack":"Error: Campos obrigatórios ausentes.\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:68:23)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)\n    at Function.handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:186:3)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"body":{"clienteCpf":"","notaFiscal":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido : O campo Nota Fiscal é obrigatório.","stack":"Error: O campo Nota Fiscal é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:8:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:58:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"body":{"clienteCpf":"","notaFiscal":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido W8eiAD1Xe: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido rqNmo-iKE: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ [inserir] Pedido OwTomiHa5 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ [inserir] Pedido W11eTnUG0 inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 12312312333 excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ [deletar] Pedido 12312312333 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido asd excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"✅ [deletar] Pedido asd deletado com sucesso."}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido KZz60O6Io: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido 2WwbQPLis: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido EFaQqB5O4: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido g3G_uqrHjr: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido 4Ndltk_5K: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido Pnx0yzJg2: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido ni0YyG4Z9: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido bPU37OmMk: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"body":{"clienteCpf":"","produtosNome":""},"level":"\u001b[31merror\u001b[39m","message":"❌ [inserir] Erro ao inserir pedido rX8frupn3: O campo CPF do Cliente é obrigatório.","stack":"Error: O campo CPF do Cliente é obrigatório.\n    at validarDadosPedido (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:10:15)\n    at inserir (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\src\\controller\\pedidoController:60:13)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Silvio\\Documents\\GitHub\\projeto-backend\\node_modules\\router\\index.js:291:5)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 7lUJzjMcI inserido com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de cadastro/edição de cliente."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: asdasd"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF asdasd tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente asdasd: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: asdasdadasd"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF asdasdadasd tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente asdasdadasd: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: aaasssdddff"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF aaasssdddff tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente aaasssdddff: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: aaasssdddff"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF aaasssdddff tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente aaasssdddff: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: aaasssdddff"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF aaasssdddff tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente aaasssdddff: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de inserir novo cliente: aaasssdddff"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Validação falhou: CPF aaasssdddff tem tamanho incorreto."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir cliente aaasssdddff: O CPF deve conter exatamente 11 dígitos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Acessando formulário de edição para o cliente CPF: 12345622211"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido TChHIylJF inserido com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido lSx-G6yaQ inserido com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido zZZWZ8BMB inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido F8kb7jGjG inserido com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido : O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 9PyQZXqNb inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O campo CPF do Cliente é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O CPF do Cliente deve ter exatamente 11 dígitos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 9sqcfy9kP inserido com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 9PyQZXqNb excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 9PyQZXqNb deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido F8kb7jGjG excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido F8kb7jGjG deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido zZZWZ8BMB excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido zZZWZ8BMB deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido lSx-G6yaQ excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido lSx-G6yaQ deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido TChHIylJF excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido TChHIylJF deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 7lUJzjMcI excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 7lUJzjMcI deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido W11eTnUG0 excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido W11eTnUG0 deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (12345678911)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345678911 cadastrado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678911: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678900"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (12345678900)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345678900 cadastrado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678900: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (12345678922)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345678922 cadastrado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678922: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678922"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 12345678922: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678922: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 11122233344"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (11122233344)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11122233344 cadastrado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 11122233344: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11122233344"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678922"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 12345678922: Cliente já cadastrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (11671331966)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 cadastrado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 11671331966: Cliente já cadastrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao carregar formulário de pedido: Produto.buscarTodos is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao carregar formulário de pedido: Produto.buscarTodos is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido pV-dIcDcO inserido com sucesso para CPF 11671331966. Total: 123.33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar produtos: Produto.buscarTodosProdutos is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar produtos: Produto.buscarTodosProdutos is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'Teclado Mecânico' inserido com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido T-FEX_Z4r inserido com sucesso para CPF 11671331966. Total: 249.80"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'Teclado Mecânico' deletado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto Teclado Mecânico deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asddsd' atualizado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido j_UL-I_L2 inserido com sucesso para CPF 11671331966. Total: 123.33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 11111111111"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (11111111111), Perfil: cliente"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11111111111 cadastrado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11111111111"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11111111111 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11111111111 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11111111111"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro completo: 22222222222"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Silvio (22222222222), Perfil: cliente"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 22222222222 cadastrado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 22222222222"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 22222222222"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 22222222222 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 6piZCtnNO inserido com sucesso para CPF 22222222222. Total: 123.33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 22222222222 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Administrador Padrão (00000000000), Perfil: administrador"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão criado com sucesso: 00000000000 / adm1010"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Administrador Padrão (00000000000), Perfil: administrador"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão criado com sucesso: 00000000000 / adm1010"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: administrador. CPF: 00000000000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: administrador. CPF: 00000000000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: administrador. CPF: 00000000000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: administrador. CPF: 00000000000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido UOigIlp6J inserido com sucesso para CPF 11671331966. Total: 369.99"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 38kjahQtI inserido com sucesso para CPF 11671331966. Total: 616.65"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: administrador. CPF: 00000000000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'Teclado Mecânico' inserido com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido IcSGuPjih inserido com sucesso para CPF 11671331966. Total: 220.20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: administrador. CPF: 00000000000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido IcSGuPjih excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido IcSGuPjih deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 38kjahQtI excluído com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 38kjahQtI deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: administrador. CPF: 00000000000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: administrador. CPF: 00000000000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 00000000000 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 00000000000 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 00000000000 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 00000000000 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Admin listou todos os pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}

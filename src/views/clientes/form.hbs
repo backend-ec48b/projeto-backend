@@ -1,0 +1,80 @@
+{{#if erro}}
+    <div class="alert alert-danger" role="alert">
+        {{erro}}
+    </div>
+{{/if}}
+
+<form action="{{action}}" method="POST" novalidate>
+    
+    <div class="card mb-3">
+        <div class="card-header bg-primary text-white">Dados Pessoais</div>
+        <div class="card-body row">
+            
+            <div class="col-md-4 mb-3">
+                <label for="cpf">CPF</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="cpf" 
+                    name="cpf" 
+                    
+                    
+                    value="{{#if cliente._id}}{{cliente._id}}{{else}}{{cliente.cpf}}{{/if}}" 
+                    required 
+                    placeholder="Apenas números (11 dígitos)"
+                    pattern="\d{11}" 
+                    maxlength="11" 
+                    title="O CPF deve conter exatamente 11 dígitos (apenas números)."
+                    
+                    {{#if cliente._id}}readonly{{/if}}>
+                
+                {{#if cliente._id}}
+                    <small class="form-text text-muted">O CPF não pode ser alterado.</small>
+                {{/if}}
+            </div>
+            
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" 
+                       value="{{cliente.nome}}" required>
+            </div>
+            
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" 
+                       value="{{cliente.email}}" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header bg-secondary text-white">Endereço</div>
+        <div class="card-body">
+            
+            <div class="form-group mb-3">
+                <label for="rua">Rua</label>
+                <input type="text" class="form-control" id="rua" name="endereco[rua]" 
+                       value="{{cliente.endereco.rua}}" required>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="cidade" name="endereco[cidade]" 
+                       value="{{cliente.endereco.cidade}}" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro" name="endereco[logradouro]" 
+                       value="{{cliente.endereco.logradouro}}" required>
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success me-2">
+        <i class="fas fa-save"></i> Salvar
+    </button>
+    <a href="/clientes" class="btn btn-secondary">
+        <i class="fas fa-arrow-left"></i> Cancelar
+    </a>
+</form>

@@ -1,0 +1,18 @@
+<div style="text-align: center; padding: 50px; background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; border-radius: 5px;">
+    <h1>{{titulo}}</h1>
+    <hr>
+    <p style="font-size: 1.2em;">{{mensagem}}</p>
+    
+    {{! Opção para o usuário voltar, se aplicável }}
+    <a href="/" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #dc3545; color: white; text-decoration: none; border-radius: 5px;">
+        Ir para a Página Inicial
+    </a>
+</div>
+
+{{! Opcional: Para debugging, você pode exibir o erro completo (apenas em ambientes de desenvolvimento) }}
+{{#if error_stack}}
+<details style="margin-top: 30px; text-align: left;">
+    <summary>Detalhes Técnicos do Erro</summary>
+    <pre style="white-space: pre-wrap; word-wrap: break-word;">{{error_stack}}</pre>
+</details>
+{{/if}}

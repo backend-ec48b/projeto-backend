@@ -1,129 +1,67 @@
-const Cliente = require("./classes/Cliente");
-const Produto = require("./classes/Produto");
-const Pedido = require("./classes/Pedido");
+const express = require('express')
+const session = require('express-session');
+const app = express()
+const port = 3000
+const hbs = require('hbs');
+const path = require('path');
+
+//Importações necessárias
+const logger = require("./logger");
+const clienteRouter = require('../src/routes/clienteroutes');
+const pedidoRouter = require('../src/routes/pedidoRoutes');
+const produtoRouter = require('../src/routes/produtoRoutes');
+const inicializarAdminPadrao = require('./admin-setup');
+
+app.use(express.json());
+app.use(express.urlencoded({
+    extended: true
+}));
+
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 
 
-//CLIENTES
-async function inserirCliente() {
-  const cliente = new Cliente(
-    "12345678910",
-    "Fulano da Silva",
-    "fulanodasilva@email.com", {
-        cidade: "Nova Teste",
-        rua: "Rua Teste",
-        logradouro: 123
+app.use(session({
+    secret: 'SEGREDO_MUITO_SEGURO_E_LONGO',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        maxAge: 60 * 60 * 1000
+    }
+}));
+
+
+app.get('/', (req, res) => {
+
+    const usuarioLogado = req.session.usuario;
+
+    const isAdministrador = usuarioLogado && usuarioLogado.perfil === 'administrador';
+
+    const stats = {
+        totalClientes: 42,
+        produtosAtivos: 15
+    };
+
+    res.render('home', {
+        layout: 'home',
+        usuario: usuarioLogado,
+        isAdmin: isAdministrador,
+        stats: stats
     });
-  await cliente.inserirCliente();
+});
+
+app.use('/clientes', clienteRouter);
+app.use('/pedidos', pedidoRouter);
+app.use('/produtos', produtoRouter);
+
+
+async function iniciarAplicacao() {
+
+    await inicializarAdminPadrao(); 
+
+    app.listen(port, () => {
+        logger.info(`Aplicação rodando na porta: ${port}`)
+    });
 }
 
-async function buscarClientePorCpf(cpf) {
-    const cliente = await Cliente.buscarPorCpf(cpf);
-
-    if(!cliente){
-        return;
-    }
-
-    console.log("Clientes cadastrado:", cliente);
-}
-
-async function buscarTodosClientes() {
-    const clientes = await Cliente.buscarCliente();
-    console.log("Clientes cadastrados no banco:", clientes);
-}
-
-async function atualizarCliente(cpf, dados) {
-    await Cliente.atualizarCliente(cpf, dados);
-    const atualizado = await Cliente.buscarPorCpf(cpf);
-
-    if(!atualizado){
-        return;
-    }
-
-    console.log("Dados atualizados do cliente:", atualizado);
-}
-
-async function deletarPorCpf(cpf) {
-    await Cliente.deletarCliente(cpf);
-    const deletado = await Cliente.buscarCliente();
-    console.log("Clientes restantes no banco:", deletado);
-}
-
-
-//PRODUTOS
-async function inserirProdutos() {
-    const produto = new Produto("Computador Gamer", 5500.0);
-    await produto.inserirProdutos();
-}
-
-async function buscarTodosProdutos() {
-    const produtos = await Produto.buscarTodosProdutos();
-    console.log("Produtos cadastrados:", produtos);
-}
-
-async function atualizarProduto(nome, dados) {
-    const atualizado = await Produto.atualizarProdutos(nome, dados);
-    if(!atualizado){
-        return;
-    }
-    console.log("Dados atualizados do produto:", atualizado);
-}
-
-async function deletarProduto(nome){
-    await Produto.deletarProdutos(nome);
-    const deletado = await Produto.buscarTodosProdutos();
-    console.log("Produtos restantes no banco:", deletado);
-}
-
-
-//PEDIDOS
-async function inserirPedido() {
-  const pedido = new Pedido(
-    "NF-4436524323",
-    "12345678910",
-    ["Computador Gamer", "Geladeira"] 
-  );
-    await pedido.inserirPedido();
-}
-
-async function buscarTodosPedidos() {
-    const pedidos = await Pedido.buscarPedidos();
-    console.log("Pedidos cadastrados no banco:", pedidos);
-}
-
-async function atualizarPedido(notaFiscal, dados) {
-    await Pedido.atualizarPedido(notaFiscal, dados);
-    const atualizado = await Pedido.buscarPedidos();
-    console.log("Dados atualizados do pedido:", atualizado);
-}
-
-async function deletarPedido(notaFiscal) {
-    await Pedido.deletarPedido(notaFiscal);
-    const deletado = await Pedido.buscarPedidos();
-    console.log("Pedidos restantes no banco:", deletado);
-}
-
-
-//TESTE CRUD DE CLIENTES
-
-//inserirCliente();
-//buscarTodosClientes();
-//buscarClientePorCpf("12345678910");
-//atualizarCliente("12345678910", { email: "fulanodasilvateste@email.com" });
-//deletarPorCpf("12345678910");
-
-
-//TESTE CRUD DE PRODUTOS
-
-//inserirProdutos();
-//buscarTodosProdutos();
-//atualizarProduto("Computador Gamer", { preco: 4000.0 });
-//deletarProduto("Computador Gamer");
-
-
-//TESTE CRUD DE PEDIDOS
-
-//inserirPedido();
-//buscarTodosPedidos();
-//atualizarPedido("NF-4436524323", { produtos: ["Computador Gamer"] });
-//deletarPedido("NF-4436524323");
-
+iniciarAplicacao();

@@ -1,0 +1,59 @@
+<h2>{{titulo}}</h2>
+<hr>
+
+{{#if erro}}
+    <div style="color: red; padding: 10px; border: 1px solid red; margin-bottom: 15px;">
+        <strong>Erro:</strong> {{erro}}
+    </div>
+{{/if}}
+
+<form action="/clientes/cadastrar" method="POST">
+    
+    <div class="form-group">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" class="form-control" 
+               value="{{cliente.nome}}" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" class="form-control" 
+               value="{{cliente.email}}" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="cpf">CPF (apenas números):</label>
+        <input type="text" id="cpf" name="cpf" class="form-control" 
+               value="{{cliente.cpf}}" required pattern="\d{11}" 
+               title="Digite 11 dígitos numéricos." maxlength="11">
+    </div>
+
+    <h3>Endereço</h3>
+    
+    <div class="form-group">
+        <label for="endereco-rua">Rua:</label>
+        <input type="text" id="endereco-rua" name="endereco[rua]" class="form-control" 
+               value="{{cliente.endereco.rua}}" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="endereco-logradouro">Logradouro / Número:</label>
+        <input type="text" id="endereco-logradouro" name="endereco[logradouro]" class="form-control" 
+               value="{{cliente.endereco.logradouro}}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="endereco-cidade">Cidade:</label>
+        <input type="text" id="endereco-cidade" name="endereco[cidade]" class="form-control" 
+               value="{{cliente.endereco.cidade}}" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" class="form-control" required minlength="6">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+    <a href="/clientes/login" class="btn btn-secondary">Já tenho conta</a>
+    <a href="/">Voltar para home</a>
+</form>

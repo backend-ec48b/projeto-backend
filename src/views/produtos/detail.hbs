@@ -1,0 +1,28 @@
+<div>
+    
+    <h1>Detalhes do Produto <span>#{{item.nome}}</span></h1>
+    
+    <div>
+        <div>
+
+            <div>
+                <div><strong>Nome:</strong></div>
+                <div>{{item.nome}}</div>
+            </div>
+
+            <div>
+                <div><strong>Preço:</strong></div>
+                <div>R$ {{item.preco}}</div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        {{#if is_admin}}
+        <a href="/produtos/{{item.nome}}/editar">Editar Produto</a>
+        {{/if}}
+        
+        <a href="/produtos">Voltar para a Lista</a>
+    </div>
+
+</div>

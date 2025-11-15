@@ -1,0 +1,45 @@
+<div>
+    
+    <h1>Detalhes do Pedido <span>#{{item._id}}</span></h1>
+    
+    <div>
+        <div>
+
+            <div>
+                <div><strong>Nota Fiscal (ID):</strong></div>
+                <div>{{item._id}}</div>
+            </div>
+
+            <div>
+                <div><strong>CPF do Cliente:</strong></div>
+                <div>{{item.clienteCpf}}</div>
+            </div>
+
+            <div>
+                <div><strong>Data do Pedido:</strong></div>
+                <div>{{item.data}}</div>
+            </div>
+
+            <hr>
+
+            <h5>Produtos Incluídos:</h5>
+            
+            {{#if item.produtos}}
+                <ul>
+                    {{#each item.produtos}}
+                        <li>{{this}}</li> 
+                    {{/each}}
+                </ul>
+            {{else}}
+                <p>Nenhum produto listado neste pedido.</p>
+            {{/if}}
+            
+        </div>
+    </div>
+    
+    <div>
+        <a href="/pedidos/{{item._id}}/editar">Editar Pedido</a>
+        <a href="/pedidos">Voltar para a Lista</a>
+    </div>
+
+</div>
