@@ -68,17 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const quantidade = parseInt(input.value);
             
             if (quantidade > 0) {
-                // 🚨 CORREÇÃO: Usar dataset.preco diretamente
                 const precoText = input.dataset.preco.toString().replace(',', '.'); 
                 const preco = parseFloat(precoText);
                 const produtoId = input.dataset.id;
-                const produtoNome = input.dataset.nome; // Usado para enriquecer o objeto de itens
+                const produtoNome = input.dataset.nome; 
 
                 const subtotal = quantidade * preco;
                 total += subtotal;
                 totalItens += quantidade;
 
-                // Adiciona o item à lista de itens do pedido (incluindo nome para debug/consistência)
                 itensPedido.push({
                     _id: produtoId,
                     nome: produtoNome, 
@@ -88,24 +86,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // 1. Atualiza o display do total (formato brasileiro com vírgula)
         totalDisplay.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
 
-        // 2. Preenche os campos ocultos para envio
         totalInput.value = total.toFixed(2);
         itensInput.value = JSON.stringify(itensPedido);
 
-        // 3. Gerencia o botão de finalizar
         finalizarBtn.disabled = totalItens === 0;
         finalizarBtn.textContent = totalItens === 0 
             ? 'Finalizar Pedido (0 Itens)' 
             : `Finalizar Pedido (${totalItens} Itens - R$ ${total.toFixed(2).replace('.', ',')})`;
     }
 
-    // Adiciona o listener de evento a todos os inputs de quantidade
     quantidadeInputs.forEach(input => {
         input.addEventListener('input', calcularTotalEItens);
-        // Garante que o input não aceite números negativos
         input.addEventListener('change', () => {
             if (parseInt(input.value) < 0 || isNaN(parseInt(input.value))) {
                 input.value = 0;
@@ -114,10 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Inicializa o cálculo ao carregar a página
     calcularTotalEItens();
 
-    // Opcional: Impedir o envio se o carrinho estiver vazio
     form.addEventListener('submit', (event) => {
         if (JSON.parse(itensInput.value).length === 0) {
             alert('Selecione pelo menos um produto com quantidade maior que zero para finalizar o pedido.');

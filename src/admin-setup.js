@@ -1,8 +1,9 @@
 const Cliente = require('./model/Cliente');
 const logger = require('./logger'); 
+const bcrypt = require('bcryptjs'); // <--- Importe o bcrypt
 
 const CPF_ADMIN = '00000000000';
-const HASH_SENHA_ADMIN = '$2a$10$gNfD7S9j8Z5bQcWw9w5nO8B6rE2xU3yA5vT1mC0kL0jI7hGf2a3';
+const SENHA_ADMIN_PURA = 'adm1010'; // <--- Senha em texto puro
 
 async function inicializarAdminPadrao() {
     try {
@@ -13,12 +14,15 @@ async function inicializarAdminPadrao() {
             return;
         }
 
+        // 🚨 NOVO PASSO: Gere o hash da senha em texto puro antes de usá-la.
+        const hashSenha = await bcrypt.hash(SENHA_ADMIN_PURA, 10);
+
         const novoAdmin = new Cliente(
             CPF_ADMIN,
             'Administrador Padrão',
             'admin@meuapp.com',
             { rua: 'Rua Principal', logradouro: '100', cidade: 'Cidade Admin' },
-            HASH_SENHA_ADMIN,
+            hashSenha, // <--- Use o HASH gerado
             'administrador'
         );
 

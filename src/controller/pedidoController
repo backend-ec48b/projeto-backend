@@ -1,16 +1,16 @@
 const Pedido = require('../model/Pedido');
-const Produto = require('../model/Produto'); 
-const logger = require('../logger'); 
-const shortid = require('shortid'); 
+const Produto = require('../model/Produto');
+const logger = require('../logger');
+const shortid = require('shortid');
 
 const isVazio = (valor) => !valor || (typeof valor === 'string' && valor.trim() === '');
 const limparCpf = (cpf) => {
     return cpf ? cpf.replace(/[^\d]/g, '') : '';
 };
 const validarDadosPedido = (clienteCpf) => {
-    const cpfLimpo = limparCpf(clienteCpf); 
-    if (isVazio(cpfLimpo)) { 
-        throw new Error("O campo CPF do Cliente é obrigatório."); 
+    const cpfLimpo = limparCpf(clienteCpf);
+    if (isVazio(cpfLimpo)) {
+        throw new Error("O campo CPF do Cliente é obrigatório.");
     }
     if (cpfLimpo.length !== 11) {
         throw new Error("O CPF do Cliente deve ter exatamente 11 dígitos.");
@@ -82,7 +82,6 @@ class PedidoController {
             }));
             
             const novoPedido = new Pedido(notaFiscal, cpfLimpo, produtosDetalhes); 
-            // Adiciona campos adicionais antes de inserir
             novoPedido.total = parseFloat(total);
             novoPedido.status = 'Pendente'; 
 
@@ -127,12 +126,15 @@ class PedidoController {
         const { usuario } = req.session;
         try {
             const pedido = await Pedido.buscarPorNotaFiscal(notaFiscal); 
-            if (!pedido) { return res.status(404).render('404', { message: 'Pedido não encontrado.' }); }
+            
+            if (!pedido) { 
+                return res.status(404).send('Pedido não encontrado.'); 
+            }
             
             const isAuthorized = (usuario.perfil === 'administrador' || pedido.clienteCpf === usuario.cpf);
             if (!isAuthorized) {
                 logger.warn(`Acesso negado ao pedido ${notaFiscal} pelo usuário ${usuario.cpf}.`);
-                return res.status(403).render('error', { titulo: 'Acesso Negado', mensagem: 'Você não tem permissão para visualizar este pedido.' });
+                return res.status(403).send('Acesso Negado: Você não tem permissão para visualizar este pedido.');
             }
             res.render('pedidos/detail', { item: pedido, title: `Detalhe do Pedido #${notaFiscal}` });
         } catch (error) {
@@ -157,7 +159,8 @@ class PedidoController {
         const notaFiscal = req.params.id;
         try { 
             const pedido = await Pedido.buscarPorNotaFiscal(notaFiscal);
-            if (!pedido) { return res.status(404).render('404', { message: 'Pedido para edição não encontrado.' }); }
+            
+            if (!pedido) { return res.status(404).send('Pedido para edição não encontrado.'); }
             
             res.render('pedidos/form_edicao', { item: pedido, title: `Editar Pedido #${notaFiscal}` });
         } catch (error) {

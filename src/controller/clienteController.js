@@ -90,7 +90,6 @@ class ClienteController {
             }
 
             const cpfLimpo = cpf.replace(/\D/g, '');
-            // Assumimos que Cliente.buscarPorCpf retorna o objeto completo, incluindo nome
             const cliente = await Cliente.buscarPorCpf(cpfLimpo);
 
             if (!cliente || !cliente.senha || !(await bcrypt.compare(senha, cliente.senha))) {
@@ -100,17 +99,17 @@ class ClienteController {
                 });
             }
 
-            // 🚨 CORREÇÃO AQUI: Adicionando cliente.nome ao objeto de sessão
             req.session.usuario = {
                 _id: cliente._id,
                 cpf: cliente._id,
-                nome: cliente.nome, // <-- Adicionado para exibir na home
+                nome: cliente.nome,
                 perfil: cliente.perfil
             };
             
             logger.info(`Login de sucesso. Perfil: ${cliente.perfil}. CPF: ${cliente._id}`);
 
-            const redirectPath = cliente.perfil === 'administrador' ? '/pedidos/listar' : '/';
+            // ✅ CORREÇÃO APLICADA: Redireciona o administrador para a Home ('/')
+            const redirectPath = '/'; 
             res.redirect(redirectPath);
 
         } catch (error) {

@@ -7,7 +7,6 @@ class Pedido {
         this.clienteCpf = clienteCpf;
         this.produtos = produtosNome;
         this.data = new Date();
-        // this.status = 'Aguardando Pagamento'; // Opcional
     }
 
     async inserirPedido() {
@@ -44,7 +43,6 @@ class Pedido {
         }
     }
 
-    // 🎯 MÉTODO ADICIONADO
     static async buscarPedidosPorCpf(cpf) {
         let client;
         try {
@@ -62,7 +60,6 @@ class Pedido {
         }
     }
 
-    // 🎯 MÉTODO ADICIONADO
     static async buscarPorNotaFiscal(notaFiscal) {
         let client;
         try {

@@ -10,7 +10,6 @@
 
     <form method="POST" action="/pedidos/{{#if item}}{{item._id}}{{/if}}" novalidate>
 
-        {{!-- O campo Nota Fiscal só é exibido na EDIÇÃO ({{#if item}}), pois na CRIAÇÃO ele é gerado automaticamente pelo Controller. --}}
         {{#if item}}
             <div>
                 <label for="notaFiscal">Nota Fiscal (ID):</label>
@@ -36,10 +35,7 @@
                 value="{{#if item}}{{item.clienteCpf}}{{else}}{{dadosAnteriores.clienteCpf}}{{/if}}"
                 placeholder="Ex: 12345678900 (11 dígitos)"
                 required 
-                
-                {{!-- Esta linha remove caracteres não-numéricos e limita a 11 dígitos em tempo real. --}}
-                oninput="this.value = this.value.replace(/\D/g, '').slice(0, 11)"
-                
+                oninput="this.value = this.value.replace(/\D/g, '').slice(0, 11)"                
                 inputmode="numeric"
                 pattern="\d{11}" 
                 title="O CPF deve conter exatamente 11 dígitos numéricos."

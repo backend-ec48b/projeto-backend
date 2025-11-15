@@ -73,7 +73,6 @@ class Produto {
         }
     }
     
-    // 🎯 MÉTODO ADICIONADO: Alias para 'buscarTodos' para corrigir o erro.
     static async buscarTodosProdutos() {
         return this.buscarTodos();
     }

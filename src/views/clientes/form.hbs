@@ -18,15 +18,10 @@
                     id="cpf" 
                     name="cpf" 
                     
-                    {{!-- *** CORREÇÃO AQUI *** --}}
-                    {{!-- Se for EDIÇÃO OU ERRO DE EDIÇÃO (cliente._id existe), usa cliente._id OU cliente.cpf. --}}
-                    {{!-- Se for CADASTRO OU ERRO DE CADASTRO, usa apenas cliente.cpf. --}}
-                    value="{{#if cliente._id}}{{cliente._id}}{{else}}{{cliente.cpf}}{{/if}}" 
                     
+                    value="{{#if cliente._id}}{{cliente._id}}{{else}}{{cliente.cpf}}{{/if}}" 
                     required 
                     placeholder="Apenas números (11 dígitos)"
-                    
-                    {{!-- 🎯 VALIDAÇÃO FRONTEND: Limita e exige o padrão de 11 dígitos --}}
                     pattern="\d{11}" 
                     maxlength="11" 
                     title="O CPF deve conter exatamente 11 dígitos (apenas números)."
