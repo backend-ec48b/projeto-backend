@@ -1,54 +1,212 @@
-<h2>Novo Pedido</h2>
-<p>Selecione os produtos e as quantidades desejadas:</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Pedido</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-{{#if error}}
-<div style="color: red; padding: 10px; border: 1px solid red; margin-bottom: 15px;">
-    <strong>Erro:</strong> {{error}}
-</div>
-{{/if}}
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 900px;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
 
-<form action="/pedidos" method="POST" id="pedido-form">
-    <div id="lista-produtos" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-        {{#each produtos}}
-        <div class="produto-item border p-4 rounded-lg shadow-sm bg-white" data-id="{{this._id}}">
-            <h3 class="text-lg font-semibold">{{this.nome}}</h3>
-            <p class="text-gray-600">Preço Unitário: <span class="preco" data-preco="{{this.preco}}">R$ {{this.preco}}</span></p>
-            
-            <div class="mt-3 flex items-center space-x-3">
-                <label for="qtd-{{this._id}}" class="font-medium text-sm">Quantidade:</label>
-                <input type="number" 
-                        id="qtd-{{this._id}}" 
-                        class="quantidade-input w-20 p-2 border border-gray-300 rounded-md text-center"
-                        data-id="{{this._id}}" 
-                        data-nome="{{this.nome}}" 
-                        data-preco="{{this.preco}}" 
-                        min="0" 
-                        value="0"
-                >
+        p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .alert-error {
+            background-color: #fcebeb;
+            color: #cc0000;
+            padding: 1rem;
+            border: 1px solid #cc0000;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .alert-error strong {
+            font-weight: 700;
+        }
+
+        #lista-produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .produto-item {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            background-color: #f9f9f9;
+        }
+        
+        .produto-item h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0066cc;
+            margin-bottom: 0.5rem;
+        }
+
+        .produto-item p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .preco {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .quantidade-input {
+            width: 70px;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .total-display-container {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        #total-display {
+            color: #28a745;
+            font-weight: 700;
+        }
+
+        .action-buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 15px;
+        }
+
+        #finalizar-pedido-btn {
+            padding: 0.75rem 1.5rem;
+            background-color: #28a745;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        #finalizar-pedido-btn:not(:disabled):hover {
+            background-color: #218838;
+        }
+        
+        #finalizar-pedido-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .btn-cancelar {
+            padding: 0.75rem 1.5rem;
+            background-color: #6c757d;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        
+        .btn-cancelar:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Novo Pedido</h2>
+    <p>Selecione os produtos e as quantidades desejadas:</p>
+
+    {{#if error}}
+    <div class="alert-error">
+        <strong>Erro:</strong> {{error}}
+    </div>
+    {{/if}}
+
+    <form action="/pedidos" method="POST" id="pedido-form">
+        <div id="lista-produtos">
+            {{#each produtos}}
+            <div class="produto-item" data-id="{{this._id}}">
+                <h3>{{this.nome}}</h3>
+                <p>Preço Unitário: <span class="preco" data-preco="{{this.preco}}">R$ {{this.preco}}</span></p>
+                
+                <div class="quantity-control">
+                    <label for="qtd-{{this._id}}">Quantidade:</label>
+                    <input type="number" 
+                            id="qtd-{{this._id}}" 
+                            class="quantidade-input"
+                            data-id="{{this._id}}" 
+                            data-nome="{{this.nome}}" 
+                            data-preco="{{this.preco}}" 
+                            min="0" 
+                            value="0"
+                    >
+                </div>
             </div>
+            {{/each}}
         </div>
-        {{/each}}
-    </div>
 
-    <hr style="margin: 24px 0;">
+        <hr>
 
-    <h3 class="text-xl font-bold">Total do Pedido: <span id="total-display" style="color: #4f46e5;">R$ 0,00</span></h3>
-    
-    <input type="hidden" name="total" id="total-input" value="0">
-    <input type="hidden" name="itens" id="itens-input">
-    
-    <input type="hidden" name="clienteCpf" value="{{usuario.cpf}}">
+        <h3 class="total-display-container">Total do Pedido: <span id="total-display">R$ 0,00</span></h3>
+        
+        <input type="hidden" name="total" id="total-input" value="0">
+        <input type="hidden" name="itens" id="itens-input">
+        
+        <input type="hidden" name="clienteCpf" value="{{usuario.cpf}}">
 
-    <div style="margin-top: 20px; display: flex; gap: 10px;">
-        <button type="submit" id="finalizar-pedido-btn" style="padding: 12px 24px; background-color: #4f46e5; color: white; font-weight: 600; border-radius: 8px; cursor: pointer;" disabled>
-            Finalizar Pedido (0 Itens)
-        </button>
+        <div class="action-buttons">
+            <button type="submit" id="finalizar-pedido-btn" disabled>
+                Finalizar Pedido (0 Itens)
+            </button>
 
-        <a href="/pedidos" style="padding: 12px 24px; background-color: #f1f5f9; color: #64748b; font-weight: 600; border: 1px solid #cbd5e1; border-radius: 8px; text-decoration: none; display: inline-block;">
-            Cancelar Pedido
-        </a>
-    </div>
-</form>
+            <a href="/pedidos" class="btn-cancelar">
+                Cancelar Pedido
+            </a>
+        </div>
+    </form>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -71,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const precoText = input.dataset.preco.toString().replace(',', '.'); 
                 const preco = parseFloat(precoText);
                 const produtoId = input.dataset.id;
-                const produtoNome = input.dataset.nome; 
+                const produtoNome = input.dataset.nome;
 
                 const subtotal = quantidade * preco;
                 total += subtotal;
@@ -117,3 +275,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
+</body>
+</html>

@@ -1,19 +1,191 @@
-<div>
-    
-    <h1>{{title}}</h1>
-    
-    {{#if is_admin}}
-    <a href="/produtos/novo">
-        <i></i> Novo Produto
-    </a>
-    {{/if}}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        body {
+            height: 90vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2rem;
+            gap: 1rem;
+            margin: 0;
+            box-sizing: border-box;
+        }
+ 
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 1000px;
+            height: 75dvh;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            gap: 2rem;
+            box-sizing: border-box;
+        }
 
-    <a href="/">
-        <i></i> Voltar para Home
-    </a>
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #333;
+        }
+        
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .tabela{
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        tr, td, th {
+            padding: 1rem 1.5rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th{
+            text-align: center;
+            background-color: #ccc;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .btn-novo-produto{
+            text-decoration: none;
+            background-color: #0066cc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        
+        .btn-novo-produto:hover {
+            background-color: #005bb5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+
+        .actions-td{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 5px; 
+        }
+        
+        .actions-td a, .actions-td button {
+            font-weight: 600;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-details {
+            background-color: #17a2b8; 
+            color: white;
+        }
+        .btn-details:hover {
+            background-color: #138496;
+        }
+        
+        .btn-edit {
+            background-color: #ffc107; 
+            color: #333;
+        }
+        .btn-edit:hover {
+            background-color: #e0a800;
+        }
+
+        button{
+            text-decoration: none;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #a30000;
+        }
+        
+        .alert-info {
+            padding: 1.5rem;
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            border-radius: 4px;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>{{title}}</h1>
+        <div class="header-actions">
+            {{#if is_admin}}
+            <a href="/produtos/novo" class="btn-novo-produto">
+                Novo Produto
+            </a>
+            {{/if}}
+
+            <a href="/">
+                Voltar para Home
+            </a>
+        </div>
+    </header>
 
     {{#if produtos}}
-        <div>
+        <div class="tabela">
             <table>
                 <thead>
                     <tr>
@@ -31,17 +203,19 @@
                             <td>R$ {{this.preco}}</td>
                             
                             <td>
-                                <a href="/produtos/{{this.nome}}">Detalhes</a>
-                                
-                                {{#if ../is_admin}}
-                                <a href="/produtos/{{this.nome}}/editar">Editar</a>
-                                
-                                <form action="/produtos/{{this.nome}}/deletar" method="POST" style="display: inline;">
-                                    <button type="submit" onclick="return confirm('Tem certeza que deseja deletar o produto {{this.nome}}?');">
-                                        Excluir
-                                    </button>
-                                </form>
-                                {{/if}}
+                                <div class="actions-td">
+                                    <a href="/produtos/{{this.nome}}" class="btn-details">Detalhes</a>
+                                    
+                                    {{#if ../is_admin}}
+                                    <a href="/produtos/{{this.nome}}/editar" class="btn-edit">Editar</a>
+                                    
+                                    <form action="/produtos/{{this.nome}}/deletar" method="POST" style="display: inline;">
+                                        <button type="submit" onclick="return confirm('Tem certeza que deseja deletar o produto {{this.nome}}?');">
+                                            Excluir
+                                        </button>
+                                    </form>
+                                    {{/if}}
+                                </div>
                             </td>
                         </tr>
                     {{/each}}
@@ -49,7 +223,9 @@
             </table>
         </div>
     {{else}}
-        <div>Nenhum produto cadastrado.</div>
+        <div class="alert-info">Nenhum produto cadastrado.</div>
     {{/if}}
-
 </div>
+
+</body>
+</html>

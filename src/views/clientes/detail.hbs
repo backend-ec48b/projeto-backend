@@ -1,58 +1,199 @@
-<div class="container mt-4">
-    <div class="d-flex justify-content-between align-items-center mb-4">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Cliente</title>
+    <style>
+        body {
+            height: 90vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2rem;
+            gap: 1rem;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 900px;
+        }
+
+        section{
+            width: 90%;
+            max-width: 900px;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+
+        .btn-header{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .btn-header button {
+            text-decoration: none;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+        
+        .btn-header a {
+            background-color: #ffa500;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+
+
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #0066cc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+
+        .container-info{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-around;
+        }
+
+        dt{
+            font-weight: 600;
+            color: #333;
+            width: 150px;
+            margin-bottom: 0.5rem;
+        }
+
+        dl{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            width: 100%;
+        }
+
+        .info-row{
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        dd{
+            margin: 0;
+            margin-bottom: 0.5rem;
+            flex-grow: 1;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            background-color: #0066cc; 
+            color: white;
+            padding: 0.75rem 1rem;
+            margin: -3rem -3rem 2rem -3rem;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        h3.info-secundaria {
+            background-color: #0099ff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
         <h2>Detalhes do Cliente: {{cliente.nome}}</h2>
 
-        <div>
-            <a href="/clientes/{{cliente._id}}/editar" class="btn btn-warning me-2">
-                <i class="fas fa-edit"></i> Editar
+        <div class="btn-header">
+            <a href="/clientes/{{cliente._id}}/editar">
+                Editar
             </a>
             
             <form action="/clientes/{{cliente._id}}/deletar" method="POST" style="display: inline;" 
-                  onsubmit="return confirm('Tem certeza que deseja deletar o cliente {{cliente.nome}} (CPF: {{cliente._id}})?');">
-                <button type="submit" class="btn btn-danger">
-                    <i></i> Excluir
+                onsubmit="return confirm('Tem certeza que deseja deletar o cliente {{cliente.nome}} (CPF: {{cliente._id}})?');">
+                <button type="submit">
+                    Excluir
                 </button>
             </form>
         </div>
-    </div>
+    </header>
 
-    <div class="card mb-4">
-        <div class="card-header bg-primary text-white">
-            Informações Principais
-        </div>
-        <div class="card-body">
-            <dl class="row">
-                <dt class="col-sm-3">CPF:</dt>
-                <dd class="col-sm-9 font-weight-bold">{{cliente._id}}</dd>
+    <section>
+        <h3 class="info-principal">Informações Principais</h3>
+        
+        <dl>
+            <div class="info-row">
+                <dt>CPF:</dt>
+                <dd style="font-weight: bold;">{{cliente._id}}</dd>
+            </div>
+            
+            <div class="info-row">
+                <dt>Nome Completo:</dt>
+                <dd>{{cliente.nome}}</dd>
+            </div>
+            
+            <div class="info-row">
+                <dt>E-mail:</dt>
+                <dd>{{cliente.email}}</dd>
+            </div>
+        </dl>
+    </section>
 
-                <dt class="col-sm-3">Nome Completo:</dt>
-                <dd class="col-sm-9">{{cliente.nome}}</dd>
+    <section>
+        <h3 class="info-secundaria">Endereço</h3>
+        
+        <dl>
+            <div class="info-row">
+                <dt>Logradouro:</dt>
+                <dd>{{cliente.endereco.logradouro}}</dd>
+            </div>
 
-                <dt class="col-sm-3">E-mail:</dt>
-                <dd class="col-sm-9">{{cliente.email}}</dd>
-            </dl>
-        </div>
-    </div>
+            <div class="info-row">
+                <dt>Rua:</dt>
+                <dd>{{cliente.endereco.rua}}</dd>
+            </div>
 
-    <div class="card mb-4">
-        <div class="card-header bg-info text-white">
-            Endereço
-        </div>
-        <div class="card-body">
-            <dl class="row">
-                <dt class="col-sm-3">Logradouro:</dt>
-                <dd class="col-sm-9">{{cliente.endereco.logradouro}}</dd>
+            <div class="info-row">
+                <dt>Cidade:</dt>
+                <dd>{{cliente.endereco.cidade}}</dd>
+            </div>
+        </dl>
+    </section>
 
-                <dt class="col-sm-3">Rua:</dt>
-                <dd class="col-sm-9">{{cliente.endereco.rua}}</dd>
-
-                <dt class="col-sm-3">Cidade:</dt>
-                <dd class="col-sm-9">{{cliente.endereco.cidade}}</dd>
-            </dl>
-        </div>
-    </div>
-
-    <a href="/clientes" class="btn btn-secondary mt-3">
-        <i class="fas fa-arrow-left"></i> Voltar à Listagem
+    <a href="/clientes" style="margin-top: 1rem; background-color: #6c757d;">
+        Voltar à Listagem
     </a>
-</div>
+</body>
+</html>

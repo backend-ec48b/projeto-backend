@@ -136,7 +136,7 @@ class PedidoController {
                 logger.warn(`Acesso negado ao pedido ${notaFiscal} pelo usuário ${usuario.cpf}.`);
                 return res.status(403).send('Acesso Negado: Você não tem permissão para visualizar este pedido.');
             }
-            res.render('pedidos/detail', { item: pedido, title: `Detalhe do Pedido #${notaFiscal}` });
+            res.render('pedidos/detail', { item: pedido, title: `Detalhe do Pedido #${notaFiscal}`, is_admin: usuario.perfil === 'administrador' });
         } catch (error) {
             logger.error(`Erro ao buscar detalhes do pedido ${notaFiscal}: ${error.message}`);
             res.status(500).send(`Erro ao buscar pedido: ${error.message}`);
@@ -157,12 +157,17 @@ class PedidoController {
 
     async exibirEdicao(req, res) {
         const notaFiscal = req.params.id;
+        const { usuario } = req.session;
         try { 
             const pedido = await Pedido.buscarPorNotaFiscal(notaFiscal);
             
             if (!pedido) { return res.status(404).send('Pedido para edição não encontrado.'); }
             
-            res.render('pedidos/form_edicao', { item: pedido, title: `Editar Pedido #${notaFiscal}` });
+            res.render('pedidos/novo_pedido', { 
+                item: pedido, 
+                title: `Editar Pedido #${notaFiscal}`,
+                usuario: usuario
+            });
         } catch (error) {
             logger.error(`Erro ao buscar pedido para edição ${notaFiscal}: ${error.message}`);
             res.status(500).send(`Erro ao buscar pedido para edição: ${error.message}`);
@@ -172,19 +177,23 @@ class PedidoController {
     async atualizar(req, res) {
         const notaFiscalOriginal = req.params.id;
         const dados = req.body;
+        const { usuario } = req.session;
         let { clienteCpf } = dados;
         try {
             const cpfLimpo = validarDadosPedido(clienteCpf);
             dados.clienteCpf = cpfLimpo;
+            
             await Pedido.atualizarPedido(notaFiscalOriginal, dados); 
             logger.info(`Pedido ${notaFiscalOriginal} atualizado com sucesso.`);
             res.redirect('/pedidos/listar'); 
         } catch (error) {
             logger.error(`Erro ao atualizar pedido ${notaFiscalOriginal}: ${error.message}`);
-            res.render('pedidos/form_edicao', {
+            
+            res.render('pedidos/form', { 
                 item: { ...dados, _id: notaFiscalOriginal },
                 error: error.message,
-                title: `Erro ao Editar Pedido #${notaFiscalOriginal}`
+                title: `Erro ao Editar Pedido #${notaFiscalOriginal}`,
+                usuario: usuario
             });
         }
     }

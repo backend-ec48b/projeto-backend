@@ -1,54 +1,260 @@
-<h2>Lista de Pedidos</h2>
-<hr>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<a href="/pedidos/novo" class="btn btn-primary mb-3">Novo Pedido</a>
-<a href="/">Início</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        body {
+            height: 90vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2rem;
+            gap: 1rem;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-{{#if pedidos.length}}
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Nota Fiscal (ID)</th>
-                <th scope="col">CPF do Cliente</th>
-                <th scope="col">Data do Pedido</th>
-                <th scope="col">Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each pedidos}}
-            <tr>
-                <th scope="row">{{this._id}}</th>
-                <td>{{this.clienteCpf}}</td>
-                <td>{{this.data}}</td>
-                <td>{{this.produtosNome}}</td>
-                <td>
-                    <a href="/pedidos/{{this._id}}" class="btn btn-info btn-sm" title="Ver Detalhes">
-                        Detalhes
-                    </a>
-                    
-                    {{#if ../is_admin}}
-                        <a href="/pedidos/{{this._id}}/editar" class="btn btn-warning btn-sm" title="Editar Pedido">
-                            Editar
-                        </a>
-                        
-                        <form action="/pedidos/{{this._id}}/deletar" method="POST" style="display: inline;">
-                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Tem certeza que deseja deletar o pedido {{this._id}}?');" title="Deletar Pedido">
-                                Deletar
-                            </button>
-                        </form>
-                    {{/if}}
-                </td>
-            </tr>
-            {{/each}}
-        </tbody>
-    </table>
-{{else}}
-    <div class="alert alert-info" role="alert">
-        Nenhum pedido encontrado. 
-        {{#if ../is_admin}}
-            <a href="/pedidos/novo">Crie o primeiro como administrador.</a>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            height: 75dvh;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            gap: 2rem;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .tabela {
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        tr,
+        td,
+        th {
+            padding: 1rem 1.5rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            text-align: center;
+            background-color: #ccc;
+            font-weight: 700;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .btn-novo-pedido {
+            text-decoration: none;
+            background-color: #0066cc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+
+        .btn-novo-pedido:hover {
+            background-color: #005bb5;
+        }
+
+        .btn-voltar-home {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+
+        .actions-td {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 5px;
+        }
+
+        .actions-td a,
+        .actions-td button {
+            font-size: 0.85rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            color: white !important;
+        }
+
+        .btn-details {
+            background-color: #17a2b8;
+            /* info */
+        }
+
+        .btn-details:hover {
+            background-color: #138496;
+        }
+
+        .btn-edit {
+            background-color: #ffc107;
+            /* warning */
+            color: #333 !important;
+        }
+
+        .btn-edit:hover {
+            background-color: #e0a800;
+        }
+
+        button {
+            text-decoration: none;
+            background-color: #cc0000;
+            /* danger */
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a30000;
+        }
+
+        .alert-info {
+            padding: 1.5rem;
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            border-radius: 4px;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h2>{{title}}</h2>
+            <div class="header-actions">
+                {{#unless is_admin}}
+                <a href="/pedidos/novo" class="btn-novo-pedido">Novo Pedido</a>
+                {{/unless}}
+                <a href="/" class="btn-voltar-home">Início</a>
+            </div>
+        </header>
+
+        {{#if pedidos.length}}
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nota Fiscal (ID)</th>
+                        <th scope="col">CPF do Cliente</th>
+                        <th scope="col">Data do Pedido</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each pedidos}}
+                    <tr>
+                        <th scope="row">{{this._id}}</th>
+                        <td>{{this.clienteCpf}}</td>
+                        <td>{{this.data}}</td>
+                        <td>{{this.status}}</td>
+                        <td>
+                            <div class="actions-td">
+                                <a href="/pedidos/{{this._id}}" class="btn-details" title="Ver Detalhes">
+                                    Detalhes
+                                </a>
+
+                                {{#if ../is_admin}}
+                                <a href="/pedidos/{{this._id}}/editar" class="btn-edit" title="Editar Pedido">
+                                    Editar
+                                </a>
+
+                                <form action="/pedidos/{{this._id}}/deletar" method="POST" style="display: inline;">
+                                    <button type="submit"
+                                        onclick="return confirm('Tem certeza que deseja deletar o pedido {{this._id}}?');"
+                                        title="Deletar Pedido">
+                                        Deletar
+                                    </button>
+                                </form>
+                                {{/if}}
+                            </div>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
         {{else}}
+        <div class="alert-info" role="alert">
+            Nenhum pedido encontrado.
+            {{#if is_admin}}
+            <a href="/pedidos/novo">Crie o primeiro como administrador.</a>
+            {{else}}
             <a href="/pedidos/novo">Faça seu primeiro pedido!</a>
+            {{/if}}
+        </div>
         {{/if}}
+
     </div>
-{{/if}}
+
+</body>
+
+</html>
