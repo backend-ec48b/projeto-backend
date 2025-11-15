@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto {{item.nome}}</title>
+    <style>
+        body {
+            height: 90vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            gap: 1rem;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            width: 90%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .container-info{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-around;
+            gap: 1.5rem;
+        }
+
+        h1{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #333;
+            font-size: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+            margin-top: 0;
+            width: 100%;
+        }
+        
+        h1 span {
+            color: #0066cc;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #333;
+            margin-right: 0.5rem;
+        }
+
+        .info-item{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .info-row {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .btn-editar-produto{
+            text-decoration: none;
+            background-color: #0066cc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        
+        .btn-editar-produto:hover {
+            background-color: #005bb5;
+        }
+
+        a{
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #0066cc;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        
+        a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .btn-actions{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            width: 100%;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    
+    <h1>Detalhes do Produto <span>#{{item.nome}}</span></h1>
+    
+    <div class="container-info">
+        
+        <div class="info-item">
+
+            <div class="info-row">
+                <div class="label">Nome:</div>
+                <div>{{item.nome}}</div>
+            </div>
+
+            <div class="info-row">
+                <div class="label">Preço:</div>
+                <div>R$ {{item.preco}}</div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="btn-actions">
+        {{#if is_admin}}
+        <a href="/produtos/{{item.nome}}/editar" class="btn-editar-produto">Editar Produto</a>
+        {{/if}}
+        
+        <a href="/produtos">Voltar para a Lista</a>
+    </div>
+
+</section>
+
+</body>
+</html>

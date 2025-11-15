@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Pedido</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 900px;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .alert-error {
+            background-color: #fcebeb;
+            color: #cc0000;
+            padding: 1rem;
+            border: 1px solid #cc0000;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .alert-error strong {
+            font-weight: 700;
+        }
+
+        #lista-produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .produto-item {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            background-color: #f9f9f9;
+        }
+        
+        .produto-item h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0066cc;
+            margin-bottom: 0.5rem;
+        }
+
+        .produto-item p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .preco {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .quantidade-input {
+            width: 70px;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .total-display-container {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        #total-display {
+            color: #28a745;
+            font-weight: 700;
+        }
+
+        .action-buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 15px;
+        }
+
+        #finalizar-pedido-btn {
+            padding: 0.75rem 1.5rem;
+            background-color: #28a745;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        #finalizar-pedido-btn:not(:disabled):hover {
+            background-color: #218838;
+        }
+        
+        #finalizar-pedido-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .btn-cancelar {
+            padding: 0.75rem 1.5rem;
+            background-color: #6c757d;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        
+        .btn-cancelar:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Novo Pedido</h2>
+    <p>Selecione os produtos e as quantidades desejadas:</p>
+
+    {{#if error}}
+    <div class="alert-error">
+        <strong>Erro:</strong> {{error}}
+    </div>
+    {{/if}}
+
+    <form action="/pedidos" method="POST" id="pedido-form">
+        <div id="lista-produtos">
+            {{#each produtos}}
+            <div class="produto-item" data-id="{{this._id}}">
+                <h3>{{this.nome}}</h3>
+                <p>Preço Unitário: <span class="preco" data-preco="{{this.preco}}">R$ {{this.preco}}</span></p>
+                
+                <div class="quantity-control">
+                    <label for="qtd-{{this._id}}">Quantidade:</label>
+                    <input type="number" 
+                            id="qtd-{{this._id}}" 
+                            class="quantidade-input"
+                            data-id="{{this._id}}" 
+                            data-nome="{{this.nome}}" 
+                            data-preco="{{this.preco}}" 
+                            min="0" 
+                            value="0"
+                    >
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+        <hr>
+
+        <h3 class="total-display-container">Total do Pedido: <span id="total-display">R$ 0,00</span></h3>
+        
+        <input type="hidden" name="total" id="total-input" value="0">
+        <input type="hidden" name="itens" id="itens-input">
+        
+        <input type="hidden" name="clienteCpf" value="{{usuario.cpf}}">
+
+        <div class="action-buttons">
+            <button type="submit" id="finalizar-pedido-btn" disabled>
+                Finalizar Pedido (0 Itens)
+            </button>
+
+            <a href="/pedidos" class="btn-cancelar">
+                Cancelar Pedido
+            </a>
+        </div>
+    </form>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const totalDisplay = document.getElementById('total-display');
+    const totalInput = document.getElementById('total-input');
+    const itensInput = document.getElementById('itens-input');
+    const form = document.getElementById('pedido-form');
+    const finalizarBtn = document.getElementById('finalizar-pedido-btn');
+    const quantidadeInputs = document.querySelectorAll('.quantidade-input');
+
+    function calcularTotalEItens() {
+        let total = 0;
+        const itensPedido = [];
+        let totalItens = 0;
+
+        quantidadeInputs.forEach(input => {
+            const quantidade = parseInt(input.value);
+            
+            if (quantidade > 0) {
+                const precoText = input.dataset.preco.toString().replace(',', '.'); 
+                const preco = parseFloat(precoText);
+                const produtoId = input.dataset.id;
+                const produtoNome = input.dataset.nome;
+
+                const subtotal = quantidade * preco;
+                total += subtotal;
+                totalItens += quantidade;
+
+                itensPedido.push({
+                    _id: produtoId,
+                    nome: produtoNome, 
+                    preco: preco,
+                    quantidade: quantidade
+                });
+            }
+        });
+
+        totalDisplay.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+
+        totalInput.value = total.toFixed(2);
+        itensInput.value = JSON.stringify(itensPedido);
+
+        finalizarBtn.disabled = totalItens === 0;
+        finalizarBtn.textContent = totalItens === 0 
+            ? 'Finalizar Pedido (0 Itens)' 
+            : `Finalizar Pedido (${totalItens} Itens - R$ ${total.toFixed(2).replace('.', ',')})`;
+    }
+
+    quantidadeInputs.forEach(input => {
+        input.addEventListener('input', calcularTotalEItens);
+        input.addEventListener('change', () => {
+            if (parseInt(input.value) < 0 || isNaN(parseInt(input.value))) {
+                input.value = 0;
+            }
+            calcularTotalEItens();
+        });
+    });
+
+    calcularTotalEItens();
+
+    form.addEventListener('submit', (event) => {
+        if (JSON.parse(itensInput.value).length === 0) {
+            alert('Selecione pelo menos um produto com quantidade maior que zero para finalizar o pedido.');
+            event.preventDefault();
+        }
+    });
+});
+</script>
+</body>
+</html>

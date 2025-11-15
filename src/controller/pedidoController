@@ -1,0 +1,216 @@
+const Pedido = require('../model/Pedido');
+const Produto = require('../model/Produto');
+const logger = require('../logger');
+const shortid = require('shortid');
+
+const isVazio = (valor) => !valor || (typeof valor === 'string' && valor.trim() === '');
+const limparCpf = (cpf) => {
+    return cpf ? cpf.replace(/[^\d]/g, '') : '';
+};
+const validarDadosPedido = (clienteCpf) => {
+    const cpfLimpo = limparCpf(clienteCpf);
+    if (isVazio(cpfLimpo)) {
+        throw new Error("O campo CPF do Cliente é obrigatório.");
+    }
+    if (cpfLimpo.length !== 11) {
+        throw new Error("O CPF do Cliente deve ter exatamente 11 dígitos.");
+    }
+    return cpfLimpo;
+};
+
+class PedidoController {
+    
+    async listarMeusPedidos(req, res) {
+        const { usuario } = req.session;
+        try {
+            const pedidos = await Pedido.buscarPedidosPorCpf(usuario.cpf);
+            logger.info(`Cliente ${usuario.cpf} listou seus pedidos.`);
+            
+            res.render('pedidos/list', { 
+                pedidos, 
+                title: 'Meus Pedidos',
+                is_admin: false,
+                usuario: usuario
+            });
+        } catch (error) {
+            logger.error(`Erro ao listar pedidos do cliente ${usuario.cpf}: ${error.message}`); 
+            res.status(500).send(`Erro ao listar seus pedidos: ${error.message}`);
+        }
+    }
+
+    async exibirFormulario(req, res) { 
+        const { usuario } = req.session;
+        try {
+            const produtos = await Produto.buscarTodos(); 
+            const initialCpf = usuario.perfil === 'cliente' ? usuario.cpf : '';
+
+            res.render('pedidos/novo_pedido', { 
+                title: 'Criar Novo Pedido',
+                usuario: usuario,
+                produtos: produtos, 
+                dadosAnteriores: { clienteCpf: initialCpf }
+            });
+        } catch (error) {
+            logger.error(`Erro ao carregar formulário de pedido: ${error.message}`); 
+            res.status(500).send('Erro ao carregar a lista de produtos.');
+        }
+    }
+
+    async inserir(req, res) {
+        let { clienteCpf, total, itens } = req.body; 
+        const { usuario } = req.session;
+        let notaFiscal = ''; 
+        
+        try {
+            if (usuario.perfil === 'cliente') {
+                clienteCpf = usuario.cpf;
+            } 
+            
+            const cpfLimpo = validarDadosPedido(clienteCpf);
+            const itensParseados = JSON.parse(itens); 
+
+            if (!itensParseados || itensParseados.length === 0) {
+                 throw new Error("O pedido deve conter pelo menos um item."); 
+            }
+            
+            notaFiscal = shortid.generate();
+            const produtosDetalhes = itensParseados.map(item => ({
+                id: item._id,
+                nome: item.nome,
+                quantidade: item.quantidade,
+                preco: item.preco
+            }));
+            
+            const novoPedido = new Pedido(notaFiscal, cpfLimpo, produtosDetalhes); 
+            novoPedido.total = parseFloat(total);
+            novoPedido.status = 'Pendente'; 
+
+            await novoPedido.inserirPedido(); 
+
+            logger.info(`Pedido ${notaFiscal} inserido com sucesso para CPF ${cpfLimpo}. Total: ${total}`);
+            res.redirect('/pedidos');
+
+        } catch (error) {
+            logger.error(`Erro ao inserir pedido ${notaFiscal || 'Falha na Validação'}: ${error.message}`);
+            
+            const produtos = await Produto.buscarTodos();
+            const cpfParaForm = usuario.perfil === 'cliente' ? usuario.cpf : clienteCpf;
+
+            res.render('pedidos/novo_pedido', {
+                title: 'Criar Novo Pedido',
+                produtos: produtos,
+                error: error.message,
+                dadosAnteriores: { clienteCpf: cpfParaForm } 
+            });
+        }
+    }
+    
+    async listar(req, res) {
+        try {
+            const pedidos = await Pedido.buscarPedidos(); 
+            logger.info('Admin listou todos os pedidos.');
+            
+            res.render('pedidos/list', { 
+                pedidos, 
+                title: 'Lista de Todos os Pedidos',
+                is_admin: true 
+            });
+        } catch (error) {
+            logger.error(`Erro ao listar todos os pedidos: ${error.message}`); 
+            res.status(500).send(`Erro ao listar pedidos: ${error.message}`);
+        }
+    }
+
+    async buscarDetalhes(req, res) {
+        const notaFiscal = req.params.id;
+        const { usuario } = req.session;
+        try {
+            const pedido = await Pedido.buscarPorNotaFiscal(notaFiscal); 
+            
+            if (!pedido) { 
+                return res.status(404).send('Pedido não encontrado.'); 
+            }
+            
+            const isAuthorized = (usuario.perfil === 'administrador' || pedido.clienteCpf === usuario.cpf);
+            if (!isAuthorized) {
+                logger.warn(`Acesso negado ao pedido ${notaFiscal} pelo usuário ${usuario.cpf}.`);
+                return res.status(403).send('Acesso Negado: Você não tem permissão para visualizar este pedido.');
+            }
+            res.render('pedidos/detail', { item: pedido, title: `Detalhe do Pedido #${notaFiscal}`, is_admin: usuario.perfil === 'administrador' });
+        } catch (error) {
+            logger.error(`Erro ao buscar detalhes do pedido ${notaFiscal}: ${error.message}`);
+            res.status(500).send(`Erro ao buscar pedido: ${error.message}`);
+        }
+    }
+
+    async deletar(req, res) {
+        const notaFiscal = req.params.id;
+        try {
+            await Pedido.deletarPedido(notaFiscal); 
+            logger.info(`Pedido ${notaFiscal} deletado com sucesso.`);
+            res.redirect('/pedidos/listar'); 
+        } catch (error) {
+            logger.error(`Erro ao deletar pedido ${notaFiscal}: ${error.message}`);
+            res.status(500).send(`Erro ao deletar pedido ${notaFiscal}: ${error.message}`);
+        }
+    }
+
+    async exibirEdicao(req, res) {
+        const notaFiscal = req.params.id;
+        const { usuario } = req.session;
+        try { 
+            const pedido = await Pedido.buscarPorNotaFiscal(notaFiscal);
+            
+            if (!pedido) { return res.status(404).send('Pedido para edição não encontrado.'); }
+            
+            res.render('pedidos/novo_pedido', { 
+                item: pedido, 
+                title: `Editar Pedido #${notaFiscal}`,
+                usuario: usuario
+            });
+        } catch (error) {
+            logger.error(`Erro ao buscar pedido para edição ${notaFiscal}: ${error.message}`);
+            res.status(500).send(`Erro ao buscar pedido para edição: ${error.message}`);
+        }
+    }
+
+    async atualizar(req, res) {
+        const notaFiscalOriginal = req.params.id;
+        const dados = req.body;
+        const { usuario } = req.session;
+        let { clienteCpf } = dados;
+        try {
+            const cpfLimpo = validarDadosPedido(clienteCpf);
+            dados.clienteCpf = cpfLimpo;
+            
+            await Pedido.atualizarPedido(notaFiscalOriginal, dados); 
+            logger.info(`Pedido ${notaFiscalOriginal} atualizado com sucesso.`);
+            res.redirect('/pedidos/listar'); 
+        } catch (error) {
+            logger.error(`Erro ao atualizar pedido ${notaFiscalOriginal}: ${error.message}`);
+            
+            res.render('pedidos/form', { 
+                item: { ...dados, _id: notaFiscalOriginal },
+                error: error.message,
+                title: `Erro ao Editar Pedido #${notaFiscalOriginal}`,
+                usuario: usuario
+            });
+        }
+    }
+
+    async atualizarStatus(req, res) {
+        const notaFiscal = req.params.id;
+        const { novoStatus } = req.body;
+        try {
+            if (isVazio(novoStatus)) { throw new Error("O novo status é obrigatório."); }
+            await Pedido.atualizarPedido(notaFiscal, { status: novoStatus });
+            logger.info(`Status do pedido ${notaFiscal} atualizado para: ${novoStatus}.`);
+            res.redirect(`/pedidos/${notaFiscal}`);
+        } catch (error) {
+            logger.error(`Erro ao atualizar status do pedido ${notaFiscal}: ${error.message}`);
+            res.status(500).send(`Erro ao atualizar status: ${error.message}`);
+        }
+    }
+}
+
+module.exports = new PedidoController();

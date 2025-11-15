@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Pedido</title>
+    <style>
+        body {
+            height: 90vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2rem;
+            gap: 1rem;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            width: 90%;
+            max-width: 700px;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .container-info{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-around;
+            gap: 1.5rem;
+        }
+
+        h1{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #333;
+            font-size: 2rem;
+            margin: 0;
+        }
+        
+        h1 span {
+            color: #0066cc;
+            font-weight: 400;
+        }
+        
+        h5 {
+            color: #333;
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .info-pedido{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+        
+        .info-item strong {
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .info-item div:nth-child(2) {
+            color: #555;
+        }
+
+        .btn-editar{
+            text-decoration: none;
+            background-color: #0066cc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+        }
+        
+        .btn-editar:hover {
+            background-color: #005bb5;
+        }
+
+        .btn-voltar {
+            text-decoration: none;
+            color: #6c757d;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: color 0.2s;
+        }
+        
+        .btn-voltar:hover {
+            color: #5a6268;
+        }
+
+        .btn-actions{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 1rem 0;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        
+        ul li {
+            color: #555;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    
+    <h1>Detalhes do Pedido <span>#{{item._id}}</span></h1>
+    
+    <div class="container-info">
+        <div class="info-pedido">
+            <div class="info-item">
+                <div class="label"><strong>Nota Fiscal (ID):</strong></div>
+                <div>{{item._id}}</div>
+            </div>
+
+            <div class="info-item">
+                <div class="label"><strong>CPF do Cliente:</strong></div>
+                <div>{{item.clienteCpf}}</div>
+            </div>
+
+            <div class="info-item">
+                <div class="label"><strong>Data do Pedido:</strong></div>
+                <div>{{item.data}}</div>
+            </div>
+        </div>
+
+        <hr>
+            
+    </div>
+    
+    <div class="btn-actions">
+        {{#if is_admin}}
+            <a href="/pedidos/{{item._id}}/editar" class="btn-editar">Editar Pedido</a>
+        {{/if}}
+        
+        <a href="{{#if is_admin}}/pedidos/listar{{else}}/pedidos{{/if}}" class="btn-voltar">
+            Voltar para a Lista
+        </a>
+    </div>
+
+</section>
+
+</body>
+</html>

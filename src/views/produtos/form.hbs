@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{#if item}}Editar Produto: {{item.nome}}{{else}}Criar Novo Produto{{/if}}</title>
+    <style>
+        body {
+            height: 90vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2rem;
+            gap: 1rem;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            gap: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .input-info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        button {
+            text-decoration: none;
+            background-color: #0066cc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background-color 0.2s;
+        }
+        
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: 8px;
+            background-color: #6c757d; 
+            color: white;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+        
+        a:hover {
+            background-color: #5a6268;
+        }
+
+
+        input, textarea{
+            width: 100%;
+            border-radius: 6px;
+            padding: 0.6rem;
+            border: 1px solid #ccc;
+            transition: border-color 0.2s;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #0066cc;
+        }
+
+        .actions-btn{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .alert-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            padding: 1rem;
+            border-radius: 4px;
+            width: 100%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <h1>{{#if item}}Editar Produto: {{item.nome}}{{else}}Criar Novo Produto{{/if}}</h1>
+    
+    {{#if error}}
+        <div class="alert-danger" role="alert">
+            Erro: {{error}}
+        </div>
+    {{/if}}
+
+    <form method="POST" action="/produtos/{{#if item}}{{item.nome}}{{/if}}" novalidate>
+
+        <div class="input-info">
+            <label for="nome">Nome do Produto:</label>
+            <input 
+                type="text" 
+                id="nome" 
+                name="nome" 
+                value="{{#if item}}{{item.nome}}{{else}}{{dadosAnteriores.nome}}{{/if}}"
+                placeholder="Ex: Teclado Mecânico"
+                required 
+            >
+        </div>
+
+        <div class="input-info">
+            <label for="preco">Preço (R$):</label>
+            <input 
+                type="number" 
+                step="0.01" 
+                id="preco" 
+                name="preco" 
+                value="{{#if item}}{{item.preco}}{{else}}{{dadosAnteriores.preco}}{{/if}}"
+                placeholder="Ex: 150.99"
+                required 
+            >
+        </div>
+
+        <div class="actions-btn">
+            <button type="submit">
+                {{#if item}}Atualizar Produto{{else}}Criar Produto{{/if}}
+            </button>
+            <a href="/produtos">Cancelar e Voltar</a>
+        </div>
+        
+    </form>
+</div>
+
+</body>
+</html>

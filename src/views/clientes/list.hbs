@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Clientes</title>
+    <style>
+    /* Estilos para o corpo da página (se usado como página principal) */
+    body {
+        height: 90vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        gap: 1rem;
+        margin: 0;
+        box-sizing: border-box;
+    }
+ 
+    /* Container principal do componente */
+    .container-listagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        max-width: 1000px;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        gap: 1.5rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    h2 {
+        color: #333;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    /* Estilo para o link "Novo Cliente" (botão principal) */
+    .novo-cliente {
+        text-decoration: none;
+        background-color: #0066cc;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        border-radius: 8px;
+        border: none;
+        display: inline-block;
+        transition: background-color 0.2s;
+    }
+
+    .novo-cliente:hover {
+        background-color: #005bb5;
+    }
+
+    .tabela {
+        width: 100%;
+        overflow-x: auto; /* Para garantir scroll em telas pequenas */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    tr, td, th {
+        padding: 1rem 1.2rem;
+        text-align: left;
+    }
+    
+    tr {
+        border-bottom: 1px solid #eee;
+    }
+
+    th {
+        text-align: center;
+        background-color: #f0f0f0; /* Cinza claro */
+        color: #333;
+        font-weight: 700;
+        border-bottom: 2px solid #ccc;
+    }
+    
+    td:last-child {
+        width: 150px; /* Largura fixa para a coluna de ações */
+    }
+
+    /* Links de Ação (dentro da tabela) */
+    a {
+        text-decoration: none;
+        color: #0066cc;
+        font-weight: 600;
+        transition: color 0.2s;
+        margin: 0 5px;
+    }
+
+    a:hover {
+        color: #004d99;
+    }
+
+    .actions-td {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5px;
+    }
+
+    /* Botão de Excluir */
+    button {
+        background-color: #cc0000;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        transition: background-color 0.2s;
+    }
+
+    button:hover {
+        background-color: #a30000;
+    }
+    
+    /* Alerta de nenhum cliente */
+    .no-clientes-alert {
+        padding: 1rem;
+        background-color: #fff3cd;
+        border: 1px solid #ffeeba;
+        color: #856404;
+        border-radius: 4px;
+        width: 100%;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h2>Listagem de Clientes</h2>
+        <a href="/">Inicio</a>
+    </header>
+
+    {{#if clientes}}
+    <div class="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each clientes}}
+                <tr>
+                    <td>{{_id}}</td>
+                    <td>{{nome}}</td>
+                    <td>{{email}}</td>
+                    <td>
+                        <div class="actions-td">
+                            <a href="/clientes/{{_id}}" title="Detalhes">
+                                Detalhes
+                            </a>
+                            <a href="/clientes/{{_id}}/editar" title="Editar">
+                                Editar
+                            </a>
+                            <form action="/clientes/{{_id}}/deletar" method="POST" style="display: inline;" 
+                                onsubmit="return confirm('Tem certeza que deseja deletar o cliente {{nome}}?');">
+                                <button type="submit" title="Excluir">
+                                    Excluir
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    {{else}}
+    <div class="no-clientes-alert" role="alert">
+        Nenhum cliente cadastrado. Comece adicionando um novo cliente!
+    </div>
+    {{/if}}
+</div>
+
+</body>
+</html>
