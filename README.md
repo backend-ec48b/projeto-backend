@@ -15,6 +15,9 @@ Simula o fluxo básico de um e-commerce, permitindo que clientes façam pedidos 
 ### 📦 Produtos (Admin)
 - CRUD completo: **Criar, Ler, Atualizar, Excluir**  
 - Acesso restrito ao administrador
+- Senha e login de administrador:
+- CPF: 00000000000
+- Senha: adm1010
 
 ### 🛍️ Pedidos
 - Clientes podem criar pedidos selecionando produtos e quantidades.
@@ -79,5 +82,7 @@ Este fluxo simula toda a experiência de um cliente, desde o cadastro até a vis
 - **Rota:** `/pedidos`  
 - **Ação:** Visualizar a lista de todos os pedidos feitos pelo cliente.  
 - **Resultado Esperado:** O pedido recém-criado deve aparecer listado.
+
+
 
 ---
