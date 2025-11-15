@@ -1,0 +1,128 @@
+<h2>Novo Pedido</h2>
+<p>Selecione os produtos e as quantidades desejadas:</p>
+
+{{#if error}}
+<div style="color: red; padding: 10px; border: 1px solid red; margin-bottom: 15px;">
+    <strong>Erro:</strong> {{error}}
+</div>
+{{/if}}
+
+<form action="/pedidos" method="POST" id="pedido-form">
+    <div id="lista-produtos" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        {{#each produtos}}
+        <div class="produto-item border p-4 rounded-lg shadow-sm bg-white" data-id="{{this._id}}">
+            <h3 class="text-lg font-semibold">{{this.nome}}</h3>
+            <p class="text-gray-600">Preço Unitário: <span class="preco" data-preco="{{this.preco}}">R$ {{this.preco}}</span></p>
+            
+            <div class="mt-3 flex items-center space-x-3">
+                <label for="qtd-{{this._id}}" class="font-medium text-sm">Quantidade:</label>
+                <input type="number" 
+                        id="qtd-{{this._id}}" 
+                        class="quantidade-input w-20 p-2 border border-gray-300 rounded-md text-center"
+                        data-id="{{this._id}}" 
+                        data-nome="{{this.nome}}" 
+                        data-preco="{{this.preco}}" 
+                        min="0" 
+                        value="0"
+                >
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <hr style="margin: 24px 0;">
+
+    <h3 class="text-xl font-bold">Total do Pedido: <span id="total-display" style="color: #4f46e5;">R$ 0,00</span></h3>
+    
+    <input type="hidden" name="total" id="total-input" value="0">
+    <input type="hidden" name="itens" id="itens-input">
+    
+    <input type="hidden" name="clienteCpf" value="{{usuario.cpf}}">
+
+    <div style="margin-top: 20px; display: flex; gap: 10px;">
+        <button type="submit" id="finalizar-pedido-btn" style="padding: 12px 24px; background-color: #4f46e5; color: white; font-weight: 600; border-radius: 8px; cursor: pointer;" disabled>
+            Finalizar Pedido (0 Itens)
+        </button>
+
+        <a href="/pedidos" style="padding: 12px 24px; background-color: #f1f5f9; color: #64748b; font-weight: 600; border: 1px solid #cbd5e1; border-radius: 8px; text-decoration: none; display: inline-block;">
+            Cancelar Pedido
+        </a>
+    </div>
+</form>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const totalDisplay = document.getElementById('total-display');
+    const totalInput = document.getElementById('total-input');
+    const itensInput = document.getElementById('itens-input');
+    const form = document.getElementById('pedido-form');
+    const finalizarBtn = document.getElementById('finalizar-pedido-btn');
+    const quantidadeInputs = document.querySelectorAll('.quantidade-input');
+
+    function calcularTotalEItens() {
+        let total = 0;
+        const itensPedido = [];
+        let totalItens = 0;
+
+        quantidadeInputs.forEach(input => {
+            const quantidade = parseInt(input.value);
+            
+            if (quantidade > 0) {
+                // 🚨 CORREÇÃO: Usar dataset.preco diretamente
+                const precoText = input.dataset.preco.toString().replace(',', '.'); 
+                const preco = parseFloat(precoText);
+                const produtoId = input.dataset.id;
+                const produtoNome = input.dataset.nome; // Usado para enriquecer o objeto de itens
+
+                const subtotal = quantidade * preco;
+                total += subtotal;
+                totalItens += quantidade;
+
+                // Adiciona o item à lista de itens do pedido (incluindo nome para debug/consistência)
+                itensPedido.push({
+                    _id: produtoId,
+                    nome: produtoNome, 
+                    preco: preco,
+                    quantidade: quantidade
+                });
+            }
+        });
+
+        // 1. Atualiza o display do total (formato brasileiro com vírgula)
+        totalDisplay.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+
+        // 2. Preenche os campos ocultos para envio
+        totalInput.value = total.toFixed(2);
+        itensInput.value = JSON.stringify(itensPedido);
+
+        // 3. Gerencia o botão de finalizar
+        finalizarBtn.disabled = totalItens === 0;
+        finalizarBtn.textContent = totalItens === 0 
+            ? 'Finalizar Pedido (0 Itens)' 
+            : `Finalizar Pedido (${totalItens} Itens - R$ ${total.toFixed(2).replace('.', ',')})`;
+    }
+
+    // Adiciona o listener de evento a todos os inputs de quantidade
+    quantidadeInputs.forEach(input => {
+        input.addEventListener('input', calcularTotalEItens);
+        // Garante que o input não aceite números negativos
+        input.addEventListener('change', () => {
+            if (parseInt(input.value) < 0 || isNaN(parseInt(input.value))) {
+                input.value = 0;
+            }
+            calcularTotalEItens();
+        });
+    });
+
+    // Inicializa o cálculo ao carregar a página
+    calcularTotalEItens();
+
+    // Opcional: Impedir o envio se o carrinho estiver vazio
+    form.addEventListener('submit', (event) => {
+        if (JSON.parse(itensInput.value).length === 0) {
+            alert('Selecione pelo menos um produto com quantidade maior que zero para finalizar o pedido.');
+            event.preventDefault();
+        }
+    });
+});
+</script>

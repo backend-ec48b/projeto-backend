@@ -1,15 +1,14 @@
 const Produto = require('../model/Produto');
 const logger = require('../logger');
-const {
-    log
-} = require('winston');
 
 async function getProduto(nome) {
-    const todosProdutos = await Produto.buscarTodosProdutos();
-    if (todosProdutos) {
+    try {
+        const todosProdutos = await Produto.buscarTodosProdutos();
         return todosProdutos.find(p => p.nome === nome);
+    } catch (error) {
+        logger.error(`Erro na busca auxiliar de produto: ${error.message}`);
+        return null;
     }
-    return null;
 }
 
 class ProdutoController {
@@ -20,7 +19,8 @@ class ProdutoController {
             const produtos = await Produto.buscarTodosProdutos();
             res.render('produtos/list', {
                 produtos: produtos,
-                title: 'Lista de Produtos'
+                title: 'Lista de Produtos',
+                is_admin: req.session.usuario && req.session.usuario.perfil === 'administrador'
             });
         } catch (error) {
             logger.error(`Erro ao listar produtos: ${error.message}`);
@@ -29,13 +29,18 @@ class ProdutoController {
     }
 
     exibirFormulario(req, res) {
+        if (!req.session.usuario || req.session.usuario.perfil !== 'administrador') {
+            return res.status(403).send('Acesso negado. Apenas administradores podem cadastrar produtos.');
+        }
         res.render('produtos/form', {
             title: 'Criar Novo Produto'
         });
     }
 
-    // Novo produto == POST /produtos
     async inserir(req, res) {
+        if (!req.session.usuario || req.session.usuario.perfil !== 'administrador') {
+            return res.status(403).send('Acesso negado. Apenas administradores podem inserir produtos.');
+        }
         const {
             nome,
             preco
@@ -85,8 +90,10 @@ class ProdutoController {
         }
     }
 
-    // Formulário de edição GET == /produtos/:nome/editar
     async exibirEdicao(req, res) {
+        if (!req.session.usuario || req.session.usuario.perfil !== 'administrador') {
+            return res.status(403).send('Acesso negado. Apenas administradores podem editar produtos.');
+        }
         const nomeProduto = req.params.nome;
 
         try {
@@ -109,8 +116,10 @@ class ProdutoController {
         }
     }
 
-    // Atualização POST == /produtos/:nome
     async atualizar(req, res) {
+        if (!req.session.usuario || req.session.usuario.perfil !== 'administrador') {
+            return res.status(403).send('Acesso negado. Apenas administradores podem atualizar produtos.');
+        }
         const nomeOriginal = req.params.nome;
         const dadosAtualizacao = req.body;
         const {
@@ -118,32 +127,35 @@ class ProdutoController {
             preco
         } = dadosAtualizacao;
 
-        // Validação
-        if (!nome || !preco) {
-            logger.warn(`Validação de atualização falhou para "${nomeOriginal}": Nome e preço são obrigatórios.`);
-            throw new Error("Nome e preço são obrigatórios.");
-        }
-
         try {
+            if (!nome || !preco) {
+                logger.warn(`Validação de atualização falhou para "${nomeOriginal}": Nome e preço são obrigatórios.`);
+                throw new Error("Nome e preço são obrigatórios.");
+            }
+
             await Produto.atualizarProdutos(nomeOriginal, dadosAtualizacao);
 
             res.redirect('/produtos');
 
         } catch (error) {
             logger.error(`Erro ao atualizar produto "${nomeOriginal}": ${error.message}`);
+            const item = {
+                ...dadosAtualizacao,
+                nome: nomeOriginal
+            };
+            
             res.render('produtos/form', {
-                item: {
-                    ...dadosAtualizacao,
-                    nome: nomeOriginal
-                },
+                item: item,
                 error: error.message,
                 title: `Erro ao Editar Produto: ${nomeOriginal}`
             });
         }
     }
 
-    // Rota POST == /produtos/:nome/deletar
     async deletar(req, res) {
+        if (!req.session.usuario || req.session.usuario.perfil !== 'administrador') {
+            return res.status(403).send('Acesso negado. Apenas administradores podem deletar produtos.');
+        }
         const nomeProduto = req.params.nome;
 
         try {

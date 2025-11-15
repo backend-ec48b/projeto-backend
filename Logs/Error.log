@@ -145,3 +145,46 @@
 {"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O campo CPF do Cliente é obrigatório."}
 {"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O CPF do Cliente deve ter exatamente 11 dígitos."}
 {"level":"\u001b[31merror\u001b[39m","message":"Erro ao inserir pedido Falha na Validação: O campo Nomes dos Produtos é obrigatório."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678911: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678900: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678922: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 12345678922: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678922: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 11122233344: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 12345678922: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 11671331966: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao carregar formulário de pedido: Produto.buscarTodos is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao carregar formulário de pedido: Produto.buscarTodos is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar produtos: Produto.buscarTodosProdutos is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar produtos: Produto.buscarTodosProdutos is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}

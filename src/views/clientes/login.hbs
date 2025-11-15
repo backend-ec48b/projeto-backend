@@ -1,0 +1,25 @@
+<h2>{{titulo}}</h2>
+<hr>
+
+{{#if erro}}
+    <div style="color: red; padding: 10px; border: 1px solid red; margin-bottom: 15px;">
+        <strong>Erro ao Fazer Login:</strong> {{erro}}
+    </div>
+{{/if}}
+
+<form action="/clientes/login" method="POST">
+    <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" class="form-control" required 
+               maxlength="11" pattern="\d{11}" title="Digite 11 dígitos numéricos.">
+    </div>
+
+    <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-success">Entrar</button>
+    <a href="/clientes/cadastrar" class="btn btn-link">Ainda não sou cliente</a>
+    <a href="/">Voltar para home</a>
+</form>

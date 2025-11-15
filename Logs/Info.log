@@ -989,3 +989,300 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
 {"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
 {"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Buscando lista de todos os clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Encontrados 1 clientes."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678911"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (12345678911)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345678911 cadastrado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678911: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678900"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (12345678900)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345678900 cadastrado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678900: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678922"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (12345678922)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 12345678922 cadastrado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678922: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678922"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 12345678922: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 12345678922: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 11122233344"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (11122233344)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11122233344 cadastrado com sucesso."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro no processo de login para CPF 11122233344: Cannot set properties of undefined (setting 'usuario')"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11122233344"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 12345678922"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 12345678922: Cliente já cadastrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (11671331966)"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 cadastrado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao criar cliente: Cliente já cadastrado"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao cadastrar cliente 11671331966: Cliente já cadastrado"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao carregar formulário de pedido: Produto.buscarTodos is not a function"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao carregar formulário de pedido: Produto.buscarTodos is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar pedidos do cliente 11671331966: Pedido.buscarPedidosPorCpf is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido pV-dIcDcO inserido com sucesso para CPF 11671331966. Total: 123.33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar produtos: Produto.buscarTodosProdutos is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Erro ao listar produtos: Produto.buscarTodosProdutos is not a function"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'Teclado Mecânico' inserido com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido T-FEX_Z4r inserido com sucesso para CPF 11671331966. Total: 249.80"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'Teclado Mecânico' deletado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto Teclado Mecânico deletado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Produto 'asddsd' atualizado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido j_UL-I_L2 inserido com sucesso para CPF 11671331966. Total: 123.33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usando alias buscarTodosProdutos..."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Tentativa de acesso não autorizado. Redirecionando para login."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[31merror\u001b[39m","message":"Tentativa de acesso a área restrita de Admin."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11671331966"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11671331966 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro simplificado: 11111111111"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: null (11111111111), Perfil: cliente"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11111111111 cadastrado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11111111111"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11111111111 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 11111111111 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Listando todos os produtos"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 11111111111"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Tentativa de cadastro completo: 22222222222"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Silvio (22222222222), Perfil: cliente"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 22222222222 cadastrado com sucesso."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 22222222222"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Login de sucesso. Perfil: cliente. CPF: 22222222222"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 22222222222 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido criado com sucesso"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Pedido 6piZCtnNO inserido com sucesso para CPF 22222222222. Total: 123.33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente 22222222222 listou seus pedidos."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Cliente inserido com sucesso: Administrador Padrão (00000000000), Perfil: administrador"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão criado com sucesso: 00000000000 / adm1010"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Usuário administrador padrão já existe. Ignorando a criação."}
+{"level":"\u001b[32minfo\u001b[39m","message":"Aplicação rodando na porta: 3000"}

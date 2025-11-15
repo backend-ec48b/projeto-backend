@@ -18,7 +18,10 @@
     </div>
     
     <div>
+        {{#if is_admin}}
         <a href="/produtos/{{item.nome}}/editar">Editar Produto</a>
+        {{/if}}
+        
         <a href="/produtos">Voltar para a Lista</a>
     </div>
 

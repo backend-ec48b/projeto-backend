@@ -1,5 +1,6 @@
 const connect = require("../connection");
 const logger = require("../logger");
+const { ObjectId } = require('mongodb'); 
 
 class Produto {
     constructor(nome, preco) {
@@ -54,7 +55,7 @@ class Produto {
         }
     }
 
-    static async buscarTodosProdutos() {
+    static async buscarTodos() {
         let client;
         try {
             const dbConnection = await connect();
@@ -67,6 +68,31 @@ class Produto {
         } catch (error) {
             logger.error(`Erro ao buscar produtos: ${error.message}`);
             throw error; 
+        } finally {
+            if (client) client.close();
+        }
+    }
+    
+    // 🎯 MÉTODO ADICIONADO: Alias para 'buscarTodos' para corrigir o erro.
+    static async buscarTodosProdutos() {
+        return this.buscarTodos();
+    }
+    
+    static async buscarPorId(id) {
+        let client;
+        try {
+            const dbConnection = await connect();
+            const db = dbConnection.db;
+            client = dbConnection.client;
+
+            const produto = await db.collection("produtos").findOne({
+                _id: new ObjectId(id) 
+            });
+
+            return produto;
+        } catch (error) {
+            logger.error(`Erro ao buscar produto por ID ${id}: ${error.message}`);
+            return null; 
         } finally {
             if (client) client.close();
         }

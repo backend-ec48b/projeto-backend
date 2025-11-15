@@ -2,8 +2,14 @@
     
     <h1>{{title}}</h1>
     
+    {{#if is_admin}}
     <a href="/produtos/novo">
         <i></i> Novo Produto
+    </a>
+    {{/if}}
+
+    <a href="/">
+        <i></i> Voltar para Home
     </a>
 
     {{#if produtos}}
@@ -13,7 +19,9 @@
                     <tr>
                         <th>Nome</th>
                         <th>Preço</th>
+                        {{#if is_admin}}
                         <th>Ações</th>
+                        {{/if}}
                     </tr>
                 </thead>
                 <tbody>
@@ -21,15 +29,19 @@
                         <tr>
                             <td>{{this.nome}}</td>
                             <td>R$ {{this.preco}}</td>
+                            
                             <td>
                                 <a href="/produtos/{{this.nome}}">Detalhes</a>
+                                
+                                {{#if ../is_admin}}
                                 <a href="/produtos/{{this.nome}}/editar">Editar</a>
                                 
-                                <form action="/produtos/{{this.nome}}/deletar" method="POST">
+                                <form action="/produtos/{{this.nome}}/deletar" method="POST" style="display: inline;">
                                     <button type="submit" onclick="return confirm('Tem certeza que deseja deletar o produto {{this.nome}}?');">
                                         Excluir
                                     </button>
                                 </form>
+                                {{/if}}
                             </td>
                         </tr>
                     {{/each}}
